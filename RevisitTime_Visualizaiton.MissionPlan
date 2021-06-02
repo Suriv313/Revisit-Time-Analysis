@@ -1,0 +1,2378 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FreeFlyerProjectFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timePrecisionMode="nanosecond" schemaVersion="7.6.0.2">
+  <ProjectInformation>
+    <Author />
+    <Source />
+    <FreeFlyerVersion>7.6.0.54542</FreeFlyerVersion>
+    <RevisionNumber />
+    <Title />
+    <Subject />
+    <Category />
+    <Keywords />
+    <Comments />
+    <Notes />
+  </ProjectInformation>
+  <ProjectPreferences>
+    <General>
+      <LockProjectFromEditing>false</LockProjectFromEditing>
+    </General>
+    <OnOpen>
+      <ShowControlSequence>true</ShowControlSequence>
+      <ShowEmptyEnvironment>false</ShowEmptyEnvironment>
+      <ShowNotes>false</ShowNotes>
+      <ShowHome>false</ShowHome>
+      <ShowOutput>false</ShowOutput>
+      <CreateBackup>false</CreateBackup>
+      <BackupLocation></BackupLocation>
+    </OnOpen>
+    <OnRun>
+      <SaveMissionPlan>false</SaveMissionPlan>
+      <HideWarningMessages>false</HideWarningMessages>
+    </OnRun>
+  </ProjectPreferences>
+  <ProjectDataFiles>
+    <EarthOrientationFile useDefault="true"></EarthOrientationFile>
+    <ElectronDensityCoefficientFile useDefault="true"></ElectronDensityCoefficientFile>
+    <GeopotentialFile useDefault="true"></GeopotentialFile>
+    <HarrisPriesterDragFile useDefault="true"></HarrisPriesterDragFile>
+    <JacchiaAtmosphereModelFile useDefault="true"></JacchiaAtmosphereModelFile>
+    <LeapSecondFile useDefault="true"></LeapSecondFile>
+    <MagneticFieldFile useDefault="true"></MagneticFieldFile>
+    <PlanetaryFile useDefault="true"></PlanetaryFile>
+    <StationGeodeticsFile useDefault="true"></StationGeodeticsFile>
+    <SolidTideFile useDefault="true"></SolidTideFile>
+    <DSTFile useDefault="true"></DSTFile>
+    <StarFieldFile useDefault="true"></StarFieldFile>
+  </ProjectDataFiles>
+  <ProjectObjects>
+    <Object>
+      <SolarSystem name="FF_SolarSystem" isConstant="false" isGlobal="true">
+        <Name>FF_SolarSystem</Name>
+        <ComputePolarMotion>true</ComputePolarMotion>
+        <ApplyUT1Correction>true</ApplyUT1Correction>
+        <COUpdateInterval units="s" displayed_units="s">0</COUpdateInterval>
+        <NPUpdateInterval units="s" displayed_units="s">1800</NPUpdateInterval>
+        <IonosphereOptions>
+          <IonosphereOptions name="FF_SolarSystem_|ionoOptions|" isConstant="false" isGlobal="true">
+            <Name>FF_SolarSystem_|ionoOptions|</Name>
+            <MaximumHeight units="km" displayed_units="km">1000</MaximumHeight>
+            <MinimumHeight units="km" displayed_units="km">80</MinimumHeight>
+            <IntegrationStepSize units="km" displayed_units="km">25</IntegrationStepSize>
+            <ScaleFactor units="" displayed_units="">1</ScaleFactor>
+            <Model>0</Model>
+            <metadata dim="0" />
+          </IonosphereOptions>
+        </IonosphereOptions>
+        <NoradKeplerEqTolerance units="" displayed_units="">1e-12</NoradKeplerEqTolerance>
+        <metadata dim="0" />
+      </SolarSystem>
+    </Object>
+    <Object>
+      <ConsoleWindow name="Console" isConstant="false" isGlobal="true">
+        <Name>Console</Name>
+        <WindowTitle>Console</WindowTitle>
+        <WordWrap>false</WordWrap>
+        <CurrentTextColor>0</CurrentTextColor>
+        <BackColor>16777215</BackColor>
+        <Dimension units="" displayed_units="">10</Dimension>
+        <DockMode>1</DockMode>
+        <CurrentFontType>0</CurrentFontType>
+        <UseStdOut>false</UseStdOut>
+        <ShowOnRun>false</ShowOnRun>
+        <metadata dim="0" />
+      </ConsoleWindow>
+    </Object>
+    <Object>
+      <Region name="Region1" isConstant="false" isGlobal="false">
+        <Name>Region1</Name>
+        <CentralBody>Earth</CentralBody>
+        <NumberOfVertices units="" displayed_units="">6</NumberOfVertices>
+        <Latitude units="deg" displayed_units="deg" dim="6">
+          <value>47.25</value>
+          <value>47.25</value>
+          <value>36</value>
+          <value>24.75</value>
+          <value>24.75</value>
+          <value>36</value>
+        </Latitude>
+        <Longitude units="deg" displayed_units="deg" dim="6">
+          <value>113.4</value>
+          <value>146.6</value>
+          <value>143.92</value>
+          <value>142.39</value>
+          <value>117.61</value>
+          <value>116.08</value>
+        </Longitude>
+        <Color>65535</Color>
+        <Opacity units="" displayed_units="">0.4</Opacity>
+        <metadata dim="0" />
+      </Region>
+    </Object>
+    <Object>
+      <PointGroup name="PointGroup1" isConstant="false" isGlobal="false">
+        <Name>PointGroup1</Name>
+        <CentralBody>Earth</CentralBody>
+        <DataView>0</DataView>
+        <NumberOfPoints units="" displayed_units="">1</NumberOfPoints>
+        <PointDefinition>1</PointDefinition>
+        <GroupColor>0</GroupColor>
+        <GroupHeight units="km" displayed_units="km">0.0</GroupHeight>
+        <GroupElevationAngle units="deg" displayed_units="deg">0.0</GroupElevationAngle>
+        <GroupSize units="pixel" displayed_units="pixel">3.0</GroupSize>
+        <GroupOpacity units="" displayed_units="">1.0</GroupOpacity>
+        <PointLongitude units="deg" displayed_units="deg" dim="(1)">
+          <value>0.0</value>
+        </PointLongitude>
+        <PointLatitude units="deg" displayed_units="deg" dim="(1)">
+          <value>90.0</value>
+        </PointLatitude>
+        <PointHeight units="km" displayed_units="km" dim="(1)">
+          <value>0.0</value>
+        </PointHeight>
+        <PointColor dim="(1)">
+          <value>0</value>
+        </PointColor>
+        <PointElevationAngle units="deg" displayed_units="deg" dim="(1)">
+          <value>0.0</value>
+        </PointElevationAngle>
+        <PointSize units="pixel" displayed_units="pixel" dim="(1)">
+          <value>3.0</value>
+        </PointSize>
+        <PointOpacity units="" displayed_units="" dim="(1)">
+          <value>1.0</value>
+        </PointOpacity>
+        <AreaSpacing units="km^2" displayed_units="km^2">60000.0</AreaSpacing>
+        <Optimization>
+          <NumberLatitudeGrids units="" displayed_units="">100</NumberLatitudeGrids>
+          <NumberLongitudeGrids units="" displayed_units="">36</NumberLongitudeGrids>
+          <GridSafetyMargin units="deg" displayed_units="deg">2.0</GridSafetyMargin>
+        </Optimization>
+        <metadata dim="0" />
+      </PointGroup>
+    </Object>
+    <Object>
+      <Formation name="scFormation" isConstant="false" isGlobal="false">
+        <Name>scFormation</Name>
+        <Count units="" displayed_units="">0</Count>
+        <Element dim="0" />
+        <Visualization>
+          <ViewAsGroup>false</ViewAsGroup>
+          <GroupPointSize units="pixel" displayed_units="pixel">2</GroupPointSize>
+        </Visualization>
+        <InitializationSource>3</InitializationSource>
+        <InitializationFile></InitializationFile>
+        <metadata dim="0" />
+      </Formation>
+    </Object>
+    <Object>
+      <Spacecraft name="Spacecraft1" isConstant="false" isGlobal="false">
+        <Name>Spacecraft1</Name>
+        <EpochDetails>
+          <EpochSystem>UTC</EpochSystem>
+          <EpochTimeZone>UTC +/- 00:00</EpochTimeZone>
+          <EpochFormat>Calendar</EpochFormat>
+          <EpochType>Absolute</EpochType>
+          <EpochTypeInfo />
+        </EpochDetails>
+        <Epoch>Jan 01 2020 00:00:00.000000000</Epoch>
+        <ReferenceFrame>Mean of J2000 Earth Equator</ReferenceFrame>
+        <CentralBody>Earth</CentralBody>
+        <ElementType>Cartesian</ElementType>
+        <OrbitState>
+          <Cartesian>
+            <X units="km" displayed_units="km">-3410.673</X>
+            <Y units="km" displayed_units="km">5950.957</Y>
+            <Z units="km" displayed_units="km">-1788.627</Z>
+            <VX units="km/s" displayed_units="km/s">1.893006</VX>
+            <VY units="km/s" displayed_units="km/s">-1.071993</VY>
+            <VZ units="km/s" displayed_units="km/s">-7.176346</VZ>
+          </Cartesian>
+        </OrbitState>
+        <Orientation>
+          <AttitudeCoordinateSystem />
+          <AttitudeRefFrame>LVLH</AttitudeRefFrame>
+          <AttitudeSystem>EulerAngles</AttitudeSystem>
+          <AttitudeState>
+            <EulerAngles>
+              <EulerAngles units="deg" displayed_units="deg" dim="(3)">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+              </EulerAngles>
+              <EulerRates units="deg/s" displayed_units="deg/s" dim="(3)">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+              </EulerRates>
+              <EulerSequence units="" displayed_units="" dim="(3)">
+                <value>3</value>
+                <value>1</value>
+                <value>2</value>
+              </EulerSequence>
+            </EulerAngles>
+          </AttitudeState>
+        </Orientation>
+        <PhysicalProperties>
+          <DragCoeffType>0</DragCoeffType>
+          <DragCoefficientTypes>
+            <UseCd>
+              <Cd units="" displayed_units="">2.2</Cd>
+            </UseCd>
+          </DragCoefficientTypes>
+          <Cr units="" displayed_units="">1.4</Cr>
+          <Cl units="" displayed_units="">1.2</Cl>
+          <DragArea units="m^2" displayed_units="m^2">1.0</DragArea>
+          <LiftArea units="m^2" displayed_units="m^2">1.0</LiftArea>
+          <SRPArea units="m^2" displayed_units="m^2">1.0</SRPArea>
+          <SatelliteId>1</SatelliteId>
+        </PhysicalProperties>
+        <Visualization>
+          <Color>255</Color>
+          <BodyScale units="" displayed_units="">100000</BodyScale>
+          <TailLength units="" displayed_units="">100</TailLength>
+          <HistoryMode>0</HistoryMode>
+          <TickType>Circle</TickType>
+          <Annotation></Annotation>
+          <ModelDefinitionType>0</ModelDefinitionType>
+          <ModelDefinition>
+            <ThreeDModelFilename>
+              <ThreeDModelFile>Internal::globalstar</ThreeDModelFile>
+            </ThreeDModelFilename>
+          </ModelDefinition>
+        </Visualization>
+        <LaunchCoordinates>
+          <LCSEpochDetails>
+            <LCSEpochSystem>UTC</LCSEpochSystem>
+            <LCSEpochTimeZone>UTC +/- 00:00</LCSEpochTimeZone>
+            <LCSEpochFormat>Calendar</LCSEpochFormat>
+            <LCSEpochType>Absolute</LCSEpochType>
+            <LCSEpochTypeInfo />
+          </LCSEpochDetails>
+          <LCSEpoch>Jan 01 2020 00:00:00.000000000</LCSEpoch>
+          <LCSLongitude units="deg" displayed_units="deg">0.0</LCSLongitude>
+          <LCSLatitude units="deg" displayed_units="deg">0.0</LCSLatitude>
+        </LaunchCoordinates>
+        <InertialData>
+          <VehicleDryMass units="kg" displayed_units="kg">1000.0</VehicleDryMass>
+          <VehicleDryMOI units="kg m^2" displayed_units="kg m^2" dim="3,3">
+            <value>1200</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+            <value>1200</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+            <value>1200</value>
+          </VehicleDryMOI>
+          <MassTotal units="kg" displayed_units="kg">1990.18</MassTotal>
+          <VehicleDryCenterOfGravity units="m" displayed_units="m" dim="3">
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+          </VehicleDryCenterOfGravity>
+        </InertialData>
+        <OrbitNumberCumulative units="" displayed_units="">1</OrbitNumberCumulative>
+        <OrbitNumberBounded units="" displayed_units="">1</OrbitNumberBounded>
+        <OrbitNumberResetNumber units="" displayed_units="">0</OrbitNumberResetNumber>
+        <OrbitNumberDaily units="" displayed_units="">1</OrbitNumberDaily>
+        <OrbitNumberResetLongitude units="" displayed_units="">20</OrbitNumberResetLongitude>
+        <StateAdvancerType>PropFM</StateAdvancerType>
+        <StateAdvancer>
+          <PropFM>
+            <Prop>
+              <RK89 name="Spacecraft1_Propagator" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_Propagator</Name>
+                <StepSize units="s" displayed_units="s">300</StepSize>
+                <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
+                <StepToTake units="s" displayed_units="s">300.0</StepToTake>
+                <LargeCurvature units="" displayed_units="">0</LargeCurvature>
+                <FixedStep>1</FixedStep>
+                <Tolerance units="" displayed_units="">1e-9</Tolerance>
+                <AllowErrorViolation>false</AllowErrorViolation>
+                <CalculateSTM>false</CalculateSTM>
+                <STMCalculationMethod>2</STMCalculationMethod>
+                <FM>
+                  <ForceModel name="Spacecraft1_ForceModel" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_ForceModel</Name>
+                    <GravitatingBodies>
+                      <CelestialObjects dim="11">
+                        <value>Mercury</value>
+                        <value>Venus</value>
+                        <value>Earth</value>
+                        <value>Mars</value>
+                        <value>Jupiter</value>
+                        <value>Saturn</value>
+                        <value>Uranus</value>
+                        <value>Neptune</value>
+                        <value>Pluto</value>
+                        <value>Moon</value>
+                        <value>Sun</value>
+                      </CelestialObjects>
+                      <UseBodyForce dim="(11)">
+                        <value>false</value>
+                        <value>false</value>
+                        <value>true</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>true</value>
+                        <value>true</value>
+                      </UseBodyForce>
+                      <PlanetFieldType units="" displayed_units="" dim="(11)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>2</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </PlanetFieldType>
+                      <PlanetFieldDegree units="" displayed_units="" dim="(11)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>4</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </PlanetFieldDegree>
+                      <PlanetFieldOrder units="" displayed_units="" dim="(11)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>4</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </PlanetFieldOrder>
+                      <PlanetoPotentialFilename dim="(11)">
+                        <value></value>
+                        <value></value>
+                        <value>DEFAULT</value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                      </PlanetoPotentialFilename>
+                      <SolidTideFilename dim="(11)">
+                        <value></value>
+                        <value></value>
+                        <value>DEFAULT</value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                      </SolidTideFilename>
+                      <UseZeroTideModel dim="(11)">
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                      </UseZeroTideModel>
+                      <SolidTideDegree units="" displayed_units="" dim="(11)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>2</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </SolidTideDegree>
+                      <SolidTideOrder units="" displayed_units="" dim="(11)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>2</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </SolidTideOrder>
+                    </GravitatingBodies>
+                    <SRP>false</SRP>
+                    <Atmospheric>
+                      <Drag>true</Drag>
+                      <AtmosphericDensityModel>1</AtmosphericDensityModel>
+                      <SolarFluxFileType>0</SolarFluxFileType>
+                      <SolarFluxFilename>DEFAULT</SolarFluxFilename>
+                      <HarrisPriesterF107Index>65</HarrisPriesterF107Index>
+                      <Lift>false</Lift>
+                      <Rho1 units="" displayed_units="">0.0</Rho1>
+                      <HarrisPriesterDensityFilename>DEFAULT</HarrisPriesterDensityFilename>
+                    </Atmospheric>
+                    <OtherAccelerations>
+                      <UseOtherAcceleration>false</UseOtherAcceleration>
+                      <OtherAccelerations units="km/s^2" displayed_units="km/s^2" dim="(3)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </OtherAccelerations>
+                      <OtherAccelerationsRate units="km/s^3" displayed_units="km/s^3" dim="(3)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </OtherAccelerationsRate>
+                    </OtherAccelerations>
+                    <metadata dim="0" />
+                  </ForceModel>
+                </FM>
+                <ToleranceMode>1</ToleranceMode>
+                <RelativeErrorThreshold units="" displayed_units="">0.1</RelativeErrorThreshold>
+                <metadata dim="0" />
+              </RK89>
+            </Prop>
+          </PropFM>
+        </StateAdvancer>
+        <AHFParms>
+          <AHF xsi:nil="true" />
+          <AHFFilename></AHFFilename>
+          <AHFFiletype>FreeFlyer Ephemeris V1</AHFFiletype>
+        </AHFParms>
+        <Hardware>
+          <Sensors dim="0" />
+          <Tanks dim="0" />
+          <Thrusters dim="0" />
+          <ProximityZones dim="0" />
+          <Receivers dim="0" />
+          <Transponders dim="0" />
+        </Hardware>
+        <OD>
+          <SpacecraftODProperties name="Spacecraft1_|SpacecraftODProperties|" isConstant="false" isGlobal="false">
+            <Name>Spacecraft1_|SpacecraftODProperties|</Name>
+            <ElementSetToProcess>Cartesian</ElementSetToProcess>
+            <Cartesian>
+              <CartesianOrbitStateEstimablePropertyContainer name="Spacecraft1_|SpacecraftODProperties|_|Cartesian|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|SpacecraftODProperties|_|Cartesian|</Name>
+                <X>
+                  <EstimablePosition name="Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|X|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|X|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePosition>
+                </X>
+                <Y>
+                  <EstimablePosition name="Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|Y|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|Y|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePosition>
+                </Y>
+                <Z>
+                  <EstimablePosition name="Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|Z|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|Z|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePosition>
+                </Z>
+                <VX>
+                  <EstimableVelocity name="Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|VX|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|VX|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km/s" displayed_units="km/s">2e-5</Sigma>
+                    <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableVelocity>
+                </VX>
+                <VY>
+                  <EstimableVelocity name="Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|VY|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|VY|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km/s" displayed_units="km/s">2e-5</Sigma>
+                    <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableVelocity>
+                </VY>
+                <VZ>
+                  <EstimableVelocity name="Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|VZ|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Cartesian|_|VZ|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km/s" displayed_units="km/s">2e-5</Sigma>
+                    <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableVelocity>
+                </VZ>
+                <metadata dim="0" />
+              </CartesianOrbitStateEstimablePropertyContainer>
+            </Cartesian>
+            <Equinoctial>
+              <EquinoctialOrbitStateEstimablePropertyContainer name="Spacecraft1_|SpacecraftODProperties|_|Equinoctial|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|SpacecraftODProperties|_|Equinoctial|</Name>
+                <A>
+                  <EstimableEquinoctialA name="Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|A|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|A|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableEquinoctialA>
+                </A>
+                <H>
+                  <EstimablePositionComponent name="Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|H|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|H|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </H>
+                <K>
+                  <EstimablePositionComponent name="Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|K|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|K|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </K>
+                <P>
+                  <EstimablePositionComponent name="Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|P|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|P|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </P>
+                <Q>
+                  <EstimablePositionComponent name="Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|Q|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|Q|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </Q>
+                <Longitude>
+                  <EstimableEquinoctialLongitude name="Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|Longitude|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Equinoctial|_|Longitude|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="deg" displayed_units="deg">1e-3</Sigma>
+                    <ProcessNoise units="deg^2" displayed_units="deg^2">1e-15</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableEquinoctialLongitude>
+                </Longitude>
+                <metadata dim="0" />
+              </EquinoctialOrbitStateEstimablePropertyContainer>
+            </Equinoctial>
+            <Norad>
+              <NoradOrbitStateEstimablePropertyContainer name="Spacecraft1_|SpacecraftODProperties|_|Norad|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|SpacecraftODProperties|_|Norad|</Name>
+                <H>
+                  <EstimablePositionComponent name="Spacecraft1_|SpacecraftODProperties|_|Norad|_|H|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Norad|_|H|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </H>
+                <K>
+                  <EstimablePositionComponent name="Spacecraft1_|SpacecraftODProperties|_|Norad|_|K|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Norad|_|K|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </K>
+                <P>
+                  <EstimablePositionComponent name="Spacecraft1_|SpacecraftODProperties|_|Norad|_|P|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Norad|_|P|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </P>
+                <Q>
+                  <EstimablePositionComponent name="Spacecraft1_|SpacecraftODProperties|_|Norad|_|Q|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Norad|_|Q|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </Q>
+                <Longitude>
+                  <EstimableEquinoctialLongitude name="Spacecraft1_|SpacecraftODProperties|_|Norad|_|Longitude|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Norad|_|Longitude|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="deg" displayed_units="deg">1e-3</Sigma>
+                    <ProcessNoise units="deg^2" displayed_units="deg^2">1e-15</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableEquinoctialLongitude>
+                </Longitude>
+                <MeanMotion>
+                  <EstimableMeanMotion name="Spacecraft1_|SpacecraftODProperties|_|Norad|_|MeanMotion|" isConstant="false" isGlobal="false">
+                    <Name>Spacecraft1_|SpacecraftODProperties|_|Norad|_|MeanMotion|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="orbits/day" displayed_units="orbits/day">1e-6</Sigma>
+                    <ProcessNoise units="(orbits/day)^2" displayed_units="(orbits/day)^2">1e-16</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableMeanMotion>
+                </MeanMotion>
+                <metadata dim="0" />
+              </NoradOrbitStateEstimablePropertyContainer>
+            </Norad>
+            <Cd>
+              <EstimableCoefficient name="Spacecraft1_|OD_Cd|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|OD_Cd|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </Cd>
+            <Rho1>
+              <EstimableCoefficient name="Spacecraft1_|OD_Rho1|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|OD_Rho1|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </Rho1>
+            <BStar>
+              <EstimableBStar name="Spacecraft1_|OD_BStar|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|OD_BStar|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="er^-1" displayed_units="er^-1">1e-5</Sigma>
+                <ProcessNoise units="er^-2" displayed_units="er^-2">1e-12</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableBStar>
+            </BStar>
+            <DragEstimateOption>0</DragEstimateOption>
+            <Cr>
+              <EstimableCoefficient name="Spacecraft1_|OD_Cr|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|OD_Cr|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </Cr>
+            <OtherAccelerationsX>
+              <EstimableAcceleration name="Spacecraft1_|OD_UX|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|OD_UX|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km/s^2" displayed_units="km/s^2">1e-6</Sigma>
+                <ProcessNoise units="km^2/s^4" displayed_units="km^2/s^4">1e-15</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableAcceleration>
+            </OtherAccelerationsX>
+            <OtherAccelerationsY>
+              <EstimableAcceleration name="Spacecraft1_|OD_UY|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|OD_UY|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km/s^2" displayed_units="km/s^2">1e-6</Sigma>
+                <ProcessNoise units="km^2/s^4" displayed_units="km^2/s^4">1e-15</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableAcceleration>
+            </OtherAccelerationsY>
+            <OtherAccelerationsZ>
+              <EstimableAcceleration name="Spacecraft1_|OD_UZ|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|OD_UZ|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km/s^2" displayed_units="km/s^2">1e-6</Sigma>
+                <ProcessNoise units="km^2/s^4" displayed_units="km^2/s^4">1e-15</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableAcceleration>
+            </OtherAccelerationsZ>
+            <PropagateCovariance>false</PropagateCovariance>
+            <CovariancePropagationModel>0</CovariancePropagationModel>
+            <Covariance>
+              <SpacecraftCovariance name="Spacecraft1_|Covariance|" isConstant="false" isGlobal="false">
+                <Name>Spacecraft1_|Covariance|</Name>
+                <Matrix units="" displayed_units="" dim="0,0" />
+                <metadata dim="0" />
+              </SpacecraftCovariance>
+            </Covariance>
+            <metadata dim="0" />
+          </SpacecraftODProperties>
+        </OD>
+        <RefFrameEpochDetails>
+          <RefFrameEpochSystem>UTC</RefFrameEpochSystem>
+          <RefFrameEpochTimeZone>UTC +/- 00:00</RefFrameEpochTimeZone>
+          <RefFrameEpochFormat>Calendar</RefFrameEpochFormat>
+          <RefFrameEpochType>Absolute</RefFrameEpochType>
+          <RefFrameEpochTypeInfo />
+        </RefFrameEpochDetails>
+        <RefFrameEpoch>Jan 01 2020 00:00:00.000000000</RefFrameEpoch>
+        <metadata dim="0" />
+      </Spacecraft>
+    </Object>
+    <Object>
+      <PointGroup name="PointGroup2" isConstant="false" isGlobal="false">
+        <Name>PointGroup2</Name>
+        <CentralBody>Earth</CentralBody>
+        <DataView>0</DataView>
+        <NumberOfPoints units="" displayed_units="">1</NumberOfPoints>
+        <PointDefinition>1</PointDefinition>
+        <GroupColor>0</GroupColor>
+        <GroupHeight units="km" displayed_units="km">0.0</GroupHeight>
+        <GroupElevationAngle units="deg" displayed_units="deg">0.0</GroupElevationAngle>
+        <GroupSize units="pixel" displayed_units="pixel">3.0</GroupSize>
+        <GroupOpacity units="" displayed_units="">1.0</GroupOpacity>
+        <PointLongitude units="deg" displayed_units="deg" dim="(1)">
+          <value>0.0</value>
+        </PointLongitude>
+        <PointLatitude units="deg" displayed_units="deg" dim="(1)">
+          <value>90.0</value>
+        </PointLatitude>
+        <PointHeight units="km" displayed_units="km" dim="(1)">
+          <value>0.0</value>
+        </PointHeight>
+        <PointColor dim="(1)">
+          <value>0</value>
+        </PointColor>
+        <PointElevationAngle units="deg" displayed_units="deg" dim="(1)">
+          <value>0.0</value>
+        </PointElevationAngle>
+        <PointSize units="pixel" displayed_units="pixel" dim="(1)">
+          <value>3.0</value>
+        </PointSize>
+        <PointOpacity units="" displayed_units="" dim="(1)">
+          <value>1.0</value>
+        </PointOpacity>
+        <AreaSpacing units="km^2" displayed_units="km^2">60000.0</AreaSpacing>
+        <Optimization>
+          <NumberLatitudeGrids units="" displayed_units="">100</NumberLatitudeGrids>
+          <NumberLongitudeGrids units="" displayed_units="">36</NumberLongitudeGrids>
+          <GridSafetyMargin units="deg" displayed_units="deg">2.0</GridSafetyMargin>
+        </Optimization>
+        <metadata dim="0" />
+      </PointGroup>
+    </Object>
+    <Object>
+      <PointGroup name="PointGroup3" isConstant="false" isGlobal="false">
+        <Name>PointGroup3</Name>
+        <CentralBody>Earth</CentralBody>
+        <DataView>0</DataView>
+        <NumberOfPoints units="" displayed_units="">1</NumberOfPoints>
+        <PointDefinition>1</PointDefinition>
+        <GroupColor>0</GroupColor>
+        <GroupHeight units="km" displayed_units="km">0.0</GroupHeight>
+        <GroupElevationAngle units="deg" displayed_units="deg">0.0</GroupElevationAngle>
+        <GroupSize units="pixel" displayed_units="pixel">3.0</GroupSize>
+        <GroupOpacity units="" displayed_units="">1.0</GroupOpacity>
+        <PointLongitude units="deg" displayed_units="deg" dim="(1)">
+          <value>0.0</value>
+        </PointLongitude>
+        <PointLatitude units="deg" displayed_units="deg" dim="(1)">
+          <value>90.0</value>
+        </PointLatitude>
+        <PointHeight units="km" displayed_units="km" dim="(1)">
+          <value>0.0</value>
+        </PointHeight>
+        <PointColor dim="(1)">
+          <value>0</value>
+        </PointColor>
+        <PointElevationAngle units="deg" displayed_units="deg" dim="(1)">
+          <value>0.0</value>
+        </PointElevationAngle>
+        <PointSize units="pixel" displayed_units="pixel" dim="(1)">
+          <value>3.0</value>
+        </PointSize>
+        <PointOpacity units="" displayed_units="" dim="(1)">
+          <value>1.0</value>
+        </PointOpacity>
+        <AreaSpacing units="km^2" displayed_units="km^2">60000.0</AreaSpacing>
+        <Optimization>
+          <NumberLatitudeGrids units="" displayed_units="">100</NumberLatitudeGrids>
+          <NumberLongitudeGrids units="" displayed_units="">36</NumberLongitudeGrids>
+          <GridSafetyMargin units="deg" displayed_units="deg">2.0</GridSafetyMargin>
+        </Optimization>
+        <metadata dim="0" />
+      </PointGroup>
+    </Object>
+  </ProjectObjects>
+  <ProjectMissionSequence>
+    <ProjectExternals />
+    <ProjectCommands>
+      <FreeForm enabled="true">
+        <Label>FreeForm</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[
+// Mission Plan Description and Console Setup
+
+// In this example, Spacecraft2 is viewed by a sensor on Spacecraft1, and 
+// several types of output are generated.  There is a 3D ViewWindow showing
+// the relative positions of the two spacecraft, a sensor-view ViewWindow 
+// showing the perspective of a sensor attached to Spacecraft1 pointing along
+// the SC1 body x-axis, a Cartesian plot of the range between the two Spacecraft,
+// and a polar plot of the azimuth and elevation from Spacecraft1 to Spacecraft2.
+
+
+// Console Setup
+Console.BackColor = ColorTools.Black;
+Console.CurrentTextColor = ColorTools.Khaki;
+Console.Dimension = 35;
+Console.DockMode = 3;
+Console.WordWrap = 1;
+
+Report "In this example, Spacecraft2 is viewed by a sensor on Spacecraft1, and several types of output are generated.  There is a 3D ViewWindow showing the relative positions of the two spacecraft, a sensor-view ViewWindow showing the perspective of a sensor attached to Spacecraft1 pointing along the SC1 body x-axis, a Cartesian plot of the range between the two Spacecraft, and a polar plot of the azimuth and elevation from Spacecraft1 to Spacecraft2." to Console;
+
+//ApiLabel "Description state";
+
+//*****************************************************************************************
+
+Array PointCoverage[0]; // Array to hold coverage statistics for each point
+
+Array PointRevisit[0];  // Array to hold revisit statistics for each point
+
+Array PointInView[0];   // Array to hold per sensor coverage indication for each point
+
+Array avgArray[0];
+Array maxArray[0];
+Array minArray[0];
+
+Variable CoverageChange;
+
+Variable i;
+Variable j;
+Variable l;
+Variable k;
+
+Region target;
+String regionName;
+
+Variable theta_inci_min;
+Variable theta_inci_max;
+Variable h;
+Variable inc;
+Variable raan;
+Variable ecc;
+Variable ta;
+Variable argprg;
+Variable raanSpreading;
+Variable raant;
+Variable lookAngle;
+Variable stepSize;
+
+Variable look_ang_range;
+Variable sensorHeight;
+
+Variable num_orbit_plane;
+Variable num_sc_in_plane;
+Variable num_total_sats;
+
+Variable period;
+String propType;
+
+Variable reportContact = 1;
+
+//*****************************************************************************************
+//*****************************************************************************************
+theta_inci_max = 35;
+theta_inci_min = 15;
+h = 500;
+inc = 42;
+num_total_sats = 1;
+lookAngle = 0;
+period = 60;
+num_orbit_plane = 1;
+
+sensorHeight = 10;
+If(num_total_sats != 0);
+	num_sc_in_plane = num_total_sats/num_orbit_plane;
+Else;
+	num_sc_in_plane = 0;
+End;
+
+scFormation.Count = num_total_sats;
+scFormation.ViewAsGroup = 0;
+stepSize = 10;
+ecc = 0.0007552;
+argprg = 90;
+raan = 0;
+
+propType = "J2Mean";
+raanSpreading = 360;    // delta = 360 , star = 180, custum = 24*num_orbit_plane
+If(raanSpreading<0);
+    raanSpreading = 24 * num_orbit_plane;
+End;
+raant = raan + raanSpreading/num_orbit_plane*j;
+// ApiLabel "Set state";
+
+//**********************************************************************************************************************************************************************************
+
+
+
+Define Procedure PopulatePointGroupBasedOnRegion(PointGroup pg, Region analysisRegion, Variable initialNumberOfPoints, Array minLatLon, Array maxLatLon);
+
+	// Procedure to setup a PointGroup based off a defined region
+	
+	// Object creation
+	Variable i;
+	Variable j;
+	Variable maxLat = -90;
+	Variable minLat = 90;
+	Variable maxLon = 0;
+	Variable minLon = 360;
+	Variable lon;
+	Variable lat;
+	Variable prevLon;
+	Variable prevLat;
+	Variable lonSwitch;
+	Variable latSwitch;
+	Variable numOfPoints;
+	Variable aspectRatio;
+	Variable pointsAlongLon;
+	Variable pointsAlongLat;
+	Variable count;
+	
+	PointGroup boundingBoxPointGroup;
+	
+	Spacecraft sc;
+	
+	Array latPointsInRegion[0];
+	Array lonPointsInRegion[0];
+
+	//Block Determine bounding box for region
+	
+	For i = 0 to analysisRegion.NumberOfVertices-1;
+
+		If (sign(analysisRegion.Latitude[i]) != sign(prevLat));
+			If ((analysisRegion.Latitude[i] >= -90 and analysisRegion.Latitude[i] < -45) or
+				(analysisRegion.Latitude[i] <= 90 and analysisRegion.Latitude[i] > 45));
+				
+				latSwitch = 1;
+			Else;
+				
+				latSwitch = 0;
+			End;
+		End;			
+
+		If (sign(analysisRegion.Longitude[i]) != sign(prevLon));
+			If ((analysisRegion.Longitude[i] >= -180 and analysisRegion.Longitude[i] < -90) or
+				(analysisRegion.Longitude[i] <= 180 and analysisRegion.Longitude[i] > 90));
+				
+				lonSwitch = 1;
+			Else;
+				
+				lonSwitch = 0;
+			End;
+		End;			
+
+		prevLat = analysisRegion.Latitude[i];
+		prevLon = analysisRegion.Longitude[i];
+		
+		// If long switches signs around +/- 180, do this - otherwise do nothing
+		If (lonSwitch == 1 and analysisRegion.Longitude[i] < 0);
+			
+			lon = analysisRegion.Longitude[i] + 360;
+		Else;
+			
+			lon = analysisRegion.Longitude[i];
+		End;
+
+		// If lat switches signs around +/- 90, do this - otherwise do nothing
+		If (latSwitch == 1 and analysisRegion.Latitude[i] < 0);
+			
+			lat = analysisRegion.Latitude[i];// + 90;
+		Else;
+			
+			lat = analysisRegion.Latitude[i];
+		End;
+
+		If (lat < minLat);
+			
+			minLat = lat;
+		End;
+
+		If (lat > maxLat);
+			
+			maxLat = lat;
+		End;
+
+		If (lon < minLon);
+			
+			minLon = lon;
+		End;
+
+		If (lon > maxLon);
+			
+			maxLon = lon;
+		End;
+	End;
+	
+	// Set min and max Lat Lon
+	
+	minLatLon = {minLat, minLon};
+	maxLatLon = {maxLat, maxLon};
+	
+	//EndBlock
+
+	//Block Create PointGroup evenly spaced over bounding box
+
+	// Create a PointGroup evenly spaced over max/min
+	
+	numOfPoints = initialNumberOfPoints;  // Not necessarily final number of points: Rectangle will be largest that preserves aspect ratio. Use at least 150 pts.
+	aspectRatio = (maxLon - minLon)/(maxLat - minLat);      // Determine box size
+	pointsAlongLon = round(sqrt(numOfPoints*aspectRatio));  // Calculate number of columns
+	pointsAlongLat = round(pointsAlongLon/aspectRatio);     // Calculate number of rows
+
+	// Calculate number of points
+	count = (pointsAlongLat+1)*(pointsAlongLon+1);
+	
+	// Build rectangular PointGroup
+	boundingBoxPointGroup.PointDefinition = 2;
+	boundingBoxPointGroup.Count = count;
+	count = 0;
+	For i = minLat to maxLat step (maxLat - minLat)/pointsAlongLat;
+
+		For j = minLon to maxLon step (maxLon - minLon)/pointsAlongLon;
+
+			If (j > 360);
+				
+				j -= 360;
+			End;
+			If (i > 90);
+				
+				i -= 90;
+			End;
+
+			boundingBoxPointGroup[count].Longitude = j;
+			boundingBoxPointGroup[count].Latitude = i;
+			count++;
+		End;
+	End;
+	//EndBlock
+
+	//Block Define PointGroup in Region
+
+	// Place a Spacecraft at each point and determine whether SC is In Region
+	// If yes, add that point to latPointsInRegion and lonPointsInRegion Arrays
+
+	For i = 0 to boundingBoxPointGroup.Count-1;
+
+		// Assign Spacecraft location to current point of boundingBoxPointGroup
+		sc.Latitude = boundingBoxPointGroup[i].Latitude;
+		sc.Longitude = boundingBoxPointGroup[i].Longitude;
+
+		// Check whether the current point is inside the Region
+		If (sc.InRegion(analysisRegion) == 1);
+
+			// If so, add point to Arrays
+			latPointsInRegion.PushBack(boundingBoxPointGroup[i].Latitude);
+			lonPointsInRegion.PushBack(boundingBoxPointGroup[i].Longitude);
+		End;
+	End;
+
+	// Initialize pg with number of points determined above
+	pg.PointDefinition = 2;
+	pg.Count = latPointsInRegion.Dimension;
+
+	// Add points in Arrays to pg
+	For i = 0 to pg.Count-1;
+
+		pg[i].Latitude = latPointsInRegion[i];
+		pg[i].Longitude = lonPointsInRegion[i];
+	End;
+	
+	// Return value for number of points
+	initialNumberOfPoints = pg.NumberOfPoints;
+	//EndBlock
+EndProcedure;
+
+//ApiLabel "SetRegion state";
+
+//**********************************************************************************************************************************************************************************
+
+look_ang_range = 3.9 + lookAngle;
+
+
+Variable theta_in_earth;
+Variable slant_range;
+
+theta_in_earth = ((rad(theta_inci_max) - asin( (Earth.Radius / ( Earth.Radius + h)) * sin(rad(180 - theta_inci_max)))) + (rad(theta_inci_min) - asin( (Earth.Radius / ( Earth.Radius + h)) * sin(rad(180 - theta_inci_min)))))/2; 
+slant_range = sqrt((Earth.Radius+h)^2 + Earth.Radius^2 - 2 * (Earth.Radius+h) * Earth.Radius * cos(theta_in_earth));
+
+Variable tilte_in_roll;
+
+tilte_in_roll = deg(acos((( Earth.Radius + h ) - Earth.Radius*cos(theta_in_earth)) / slant_range ));
+
+//ApiLabel "SetSensor state";
+
+//**********************************************************************************************************************************************************************************
+
+
+
+For i = 0 to scFormation.Count-1;
+
+	 scFormation[i].AddSensor("sensor1" + i.ToString+j.ToString);        // Add a sensor to each Spacecraft in the Formation
+	 scFormation[i].SetPropagatorType(propType);
+
+End;
+
+//ApiLabel "GenerateSat state";
+
+If(num_total_sats != 0);
+	For l = 0 to num_orbit_plane-1;
+		For k = 0 to num_sc_in_plane-1;
+			scFormation[k+num_sc_in_plane*l].A = Earth.Radius + h;
+			scFormation[k+num_sc_in_plane*l].I = inc;
+			scFormation[k+num_sc_in_plane*l].RAAN = raanSpreading/num_orbit_plane*l;
+			scFormation[k+num_sc_in_plane*l].E = ecc;
+			scFormation[k+num_sc_in_plane*l].TA = 360/num_sc_in_plane*k + 360/num_total_sats*l;
+			scFormation[k+num_sc_in_plane*l].W = argprg;
+			scFormation[k+num_sc_in_plane*l].HistoryMode = 1;
+			scFormation[k+num_sc_in_plane*l].Color = RGB(1-0.5/num_orbit_plane*l,1/num_orbit_plane*l,52/235);
+		
+			scFormation[k+num_sc_in_plane*l].Sensors[0].MaskType = 3;
+			scFormation[k+num_sc_in_plane*l].Sensors[0].RectangularHalfAngles = {sensorHeight/2, look_ang_range};
+		
+			scFormation[k+num_sc_in_plane*l].Propagator.StepSize = TimeSpan.FromSeconds(stepSize);
+		
+		End;
+	End;
+End;
+
+//**********************************************************************************************************************************************************************************
+
+// Create a PointGroup evenly spaced over max/min
+
+// Create a PointGroup evenly spaced over max/min
+
+Get Region1 from "KoreaOceanEEZ.reg";  // Load Continental US region
+Array minLatLon;
+Array maxLatLon;
+Variable NumOfPoints;
+View Region1;
+NumOfPoints = 1250;
+
+PointGroup1.PointDefinition = 2;
+PointGroup1.Count = NumOfPoints;
+PointGroup1.GroupSize = 7;
+PointGroup2.PointDefinition = 2;
+PointGroup2.Count = NumOfPoints;
+PointGroup2.GroupSize = 7;
+PointGroup3.PointDefinition = 2;
+PointGroup3.Count = NumOfPoints;
+PointGroup3.GroupSize = 7;
+
+Call PopulatePointGroupBasedOnRegion(PointGroup1, Region1, PointGroup1.Count, minLatLon, maxLatLon);
+minLatLon.Clear();
+maxLatLon.Clear();
+Call PopulatePointGroupBasedOnRegion(PointGroup2, Region1, PointGroup2.Count, minLatLon, maxLatLon);
+minLatLon.Clear();
+maxLatLon.Clear();
+Call PopulatePointGroupBasedOnRegion(PointGroup3, Region1, PointGroup3.Count, minLatLon, maxLatLon);
+NumOfPoints = PointGroup1.Count;
+//ApiLabel "PointGroup state";
+
+//******************************************************************************************************************************************************************************
+Variable width = 400;
+Variable height = 0;
+Variable count;
+Variable scaleFactor = 19;
+Variable color;
+Variable hhh = 0;
+Variable min_1rt = 24;		///minute Min
+Variable max_1rt = 360;		///minute Min
+
+Variable min_2rt = 24;		///minute Avg
+Variable max_2rt = 360;		///minute Avg
+
+Variable min_3rt = 24;		///minute Max
+Variable max_3rt = 360;		///minute Max
+//Block Legend Overlay		 Min
+String min_1rt_range = min_1rt.ToString;
+String max_1rt_range = max_1rt.ToString;
+count = 0;
+WindowOverlay woLegend1;
+
+woLegend1.RemoveAllShapes();
+woLegend1.AddShape();
+woLegend1.Shapes[0].Type = "Rectangle";
+woLegend1.Shapes[0].SetSize(1, width, 40);
+woLegend1.Shapes[0].SetPosition(1,0,6*height+hhh);
+woLegend1.Shapes[0].RectangleOptions.FillOpacity = 0;
+woLegend1.Shapes[0].RectangleOptions.FillColor = ColorTools.Black;
+woLegend1.Shapes[0].RectangleOptions.BorderOpacity = 1;
+woLegend1.Shapes[0].RectangleOptions.BorderColor = ColorTools.White;
+woLegend1.Shapes[0].TextOptions.SetBackdropCornerRadius(1, 0);
+woLegend1.Shapes[0].RectangleOptions.BorderWidth = 1;
+
+woLegend1.AddShape();
+woLegend1.Shapes[1].Type = "Text";
+woLegend1.Shapes[1].SetSize(1,width,25);
+woLegend1.Shapes[1].SetPosition(1,0,6*height+40+hhh);
+woLegend1.Shapes[1].TextOptions.BackdropFillOpacity = 1;
+woLegend1.Shapes[1].TextOptions.BackdropFillColor = ColorTools.Black;
+woLegend1.Shapes[1].TextOptions.BackdropBorderOpacity = 1;
+woLegend1.Shapes[1].TextOptions.BackdropBorderColor = ColorTools.White;
+woLegend1.Shapes[1].TextOptions.AlignmentHorizontal = 1;
+woLegend1.Shapes[1].TextOptions.AlignmentVertical   = 1;
+woLegend1.Shapes[1].TextOptions.Font.Size = 11;
+woLegend1.Shapes[1].TextOptions.Font.Bold = 1;
+woLegend1.Shapes[1].TextOptions.Text = min_1rt_range + "                                 Min Revisit Time[hr]                              "+ max_1rt_range;
+
+woLegend1.AddShape();
+woLegend1.Shapes[2].Type = "Rectangle";
+woLegend1.Shapes[2].SetSize(1,width,25);
+woLegend1.Shapes[2].SetPosition(1,0,6*height+40+hhh);
+woLegend1.Shapes[2].RectangleOptions.FillOpacity = 1;
+woLegend1.Shapes[2].RectangleOptions.FillColor = ColorTools.Black;
+woLegend1.Shapes[2].RectangleOptions.BorderOpacity = 1;
+woLegend1.Shapes[2].RectangleOptions.BorderColor = ColorTools.White;
+count=3;
+
+//Iterate through the colors represented in the points to create a legend
+For i = 0 to scaleFactor;
+	color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, i/(scaleFactor));
+	woLegend1.AddShape();
+	woLegend1.Shapes[i+3].Type = "Rectangle";
+	woLegend1.Shapes[i+3].SetSize(1,width/(scaleFactor+1),40);
+	woLegend1.Shapes[i+3].SetPosition(1,i*width/(scaleFactor+1),6*height+hhh);
+	woLegend1.Shapes[i+3].RectangleOptions.BorderWidth = 0;
+	woLegend1.Shapes[i+3].RectangleOptions.FillColor = color;
+	woLegend1.Shapes[i+3].RectangleOptions.BorderColor = color;
+	woLegend1.Shapes[i+3].RectangleOptions.FillOpacity = 1;
+	
+	count++;
+End;
+
+woLegend1.AddShape();
+woLegend1.Shapes[count].Type="Rectangle";
+woLegend1.Shapes[count].SetSize(1,width,40);
+woLegend1.Shapes[count].SetPosition(1,0,6*height+hhh);
+woLegend1.Shapes[count].RectangleOptions.FillOpacity = 1;
+woLegend1.Shapes[count].RectangleOptions.FillColor = ColorTools.White;
+woLegend1.Shapes[count].RectangleOptions.BorderOpacity = 1;
+woLegend1.Shapes[count].RectangleOptions.BorderColor = ColorTools.White;
+
+//EndBlock	
+//Block Legend Overlay		 Avg
+String min_2rt_range = min_2rt.ToString;
+String max_2rt_range = max_2rt.ToString;
+count = 0;
+WindowOverlay woLegend2;
+
+woLegend2.RemoveAllShapes();
+woLegend2.AddShape();
+woLegend2.Shapes[0].Type = "Rectangle";
+woLegend2.Shapes[0].SetSize(1, width, 40);
+woLegend2.Shapes[0].SetPosition(1,0,6*height+hhh);
+woLegend2.Shapes[0].RectangleOptions.FillOpacity = 0;
+woLegend2.Shapes[0].RectangleOptions.FillColor = ColorTools.Black;
+woLegend2.Shapes[0].RectangleOptions.BorderOpacity = 1;
+woLegend2.Shapes[0].RectangleOptions.BorderColor = ColorTools.White;
+woLegend2.Shapes[0].TextOptions.SetBackdropCornerRadius(1, 0);
+woLegend2.Shapes[0].RectangleOptions.BorderWidth = 1;
+
+
+woLegend2.AddShape();
+woLegend2.Shapes[1].Type = "Text";
+woLegend2.Shapes[1].SetSize(1,width,25);
+woLegend2.Shapes[1].SetPosition(1,0,6*height+40+hhh);
+woLegend2.Shapes[1].TextOptions.BackdropFillOpacity = 1;
+woLegend2.Shapes[1].TextOptions.BackdropFillColor = ColorTools.Black;
+woLegend2.Shapes[1].TextOptions.BackdropBorderOpacity = 1;
+woLegend2.Shapes[1].TextOptions.BackdropBorderColor = ColorTools.White;
+woLegend2.Shapes[1].TextOptions.AlignmentHorizontal = 1;
+woLegend2.Shapes[1].TextOptions.AlignmentVertical   = 1;
+woLegend2.Shapes[1].TextOptions.Font.Size = 11;
+woLegend2.Shapes[1].TextOptions.Font.Bold = 1;
+woLegend2.Shapes[1].TextOptions.Text = min_2rt_range + "                                Average Revisit Time[hr]                             "+ max_2rt_range;
+
+woLegend2.AddShape();
+woLegend2.Shapes[2].Type = "Rectangle";
+woLegend2.Shapes[2].SetSize(1,width,25);
+woLegend2.Shapes[2].SetPosition(1,0,6*height+40+hhh);
+woLegend2.Shapes[2].RectangleOptions.FillOpacity = 1;
+woLegend2.Shapes[2].RectangleOptions.FillColor = ColorTools.Black;
+woLegend2.Shapes[2].RectangleOptions.BorderOpacity = 1;
+woLegend2.Shapes[2].RectangleOptions.BorderColor = ColorTools.White;
+count=3;
+
+//Iterate through the colors represented in the points to create a legend
+For i = 0 to scaleFactor;
+	color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, i/(scaleFactor));
+	woLegend2.AddShape();
+	woLegend2.Shapes[i+3].Type = "Rectangle";
+	woLegend2.Shapes[i+3].SetSize(1,width/(scaleFactor+1),40);
+	woLegend2.Shapes[i+3].SetPosition(1,i*width/(scaleFactor+1),6*height+hhh);
+	woLegend2.Shapes[i+3].RectangleOptions.BorderWidth = 0;
+	woLegend2.Shapes[i+3].RectangleOptions.FillColor = color;
+	woLegend2.Shapes[i+3].RectangleOptions.BorderColor = color;
+	woLegend2.Shapes[i+3].RectangleOptions.FillOpacity = 1;
+	
+	count++;
+End;
+
+woLegend2.AddShape();
+woLegend2.Shapes[count].Type="Rectangle";
+woLegend2.Shapes[count].SetSize(1,width,40);
+woLegend2.Shapes[count].SetPosition(1,0,6*height+hhh);
+woLegend2.Shapes[count].RectangleOptions.FillOpacity = 1;
+woLegend2.Shapes[count].RectangleOptions.FillColor = ColorTools.White;
+woLegend2.Shapes[count].RectangleOptions.BorderOpacity = 1;
+woLegend2.Shapes[count].RectangleOptions.BorderColor = ColorTools.White;
+
+//EndBlock	
+//Block Legend Overlay		 Max
+String min_3rt_range = min_3rt.ToString;
+String max_3rt_range = max_3rt.ToString;
+count = 0;
+WindowOverlay woLegend3;
+
+woLegend3.RemoveAllShapes();
+woLegend3.AddShape();
+woLegend3.Shapes[0].Type = "Rectangle";
+woLegend3.Shapes[0].SetSize(1, width, 40);
+woLegend3.Shapes[0].SetPosition(1,0,6*height+hhh);
+woLegend3.Shapes[0].RectangleOptions.FillOpacity = 0;
+woLegend3.Shapes[0].RectangleOptions.FillColor = ColorTools.Black;
+woLegend3.Shapes[0].RectangleOptions.BorderOpacity = 1;
+woLegend3.Shapes[0].RectangleOptions.BorderColor = ColorTools.White;
+woLegend3.Shapes[0].TextOptions.SetBackdropCornerRadius(1, 0);
+woLegend3.Shapes[0].RectangleOptions.BorderWidth = 1;
+
+woLegend3.AddShape();
+woLegend3.Shapes[1].Type = "Text";
+woLegend3.Shapes[1].SetSize(1,width,25);
+woLegend3.Shapes[1].SetPosition(1,0,6*height+40+hhh);
+woLegend3.Shapes[1].TextOptions.BackdropFillOpacity = 1;
+woLegend3.Shapes[1].TextOptions.BackdropFillColor = ColorTools.Black;
+woLegend3.Shapes[1].TextOptions.BackdropBorderOpacity = 1;
+woLegend3.Shapes[1].TextOptions.BackdropBorderColor = ColorTools.White;
+woLegend3.Shapes[1].TextOptions.AlignmentHorizontal = 1;
+woLegend3.Shapes[1].TextOptions.AlignmentVertical   = 1;
+woLegend3.Shapes[1].TextOptions.Font.Size = 11;
+woLegend3.Shapes[1].TextOptions.Font.Bold = 1;  
+woLegend3.Shapes[1].TextOptions.Text = min_3rt_range + "                                      Max Revisit Time[hr]                                   "+ max_3rt_range;
+
+woLegend3.AddShape();
+woLegend3.Shapes[2].Type = "Rectangle";
+woLegend3.Shapes[2].SetSize(1,width,25);
+woLegend3.Shapes[2].SetPosition(1,0,6*height+40+hhh);
+woLegend3.Shapes[2].RectangleOptions.FillOpacity = 1;
+woLegend3.Shapes[2].RectangleOptions.FillColor = ColorTools.Black;
+woLegend3.Shapes[2].RectangleOptions.BorderOpacity = 1;
+woLegend3.Shapes[2].RectangleOptions.BorderColor = ColorTools.White;
+count=3;
+
+//Iterate through the colors represented in the points to create a legend
+For i = 0 to scaleFactor;
+	color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, i/(scaleFactor));
+	woLegend3.AddShape();
+	woLegend3.Shapes[i+3].Type = "Rectangle";
+	woLegend3.Shapes[i+3].SetSize(1,width/(scaleFactor+1),40);
+	woLegend3.Shapes[i+3].SetPosition(1,i*width/(scaleFactor+1),6*height+hhh);
+	woLegend3.Shapes[i+3].RectangleOptions.BorderWidth = 0;
+	woLegend3.Shapes[i+3].RectangleOptions.FillColor = color;
+	woLegend3.Shapes[i+3].RectangleOptions.BorderColor = color;
+	woLegend3.Shapes[i+3].RectangleOptions.FillOpacity = 1;
+	
+	count++;
+End;
+
+woLegend3.AddShape();
+woLegend3.Shapes[count].Type="Rectangle";
+woLegend3.Shapes[count].SetSize(1,width,40);
+woLegend3.Shapes[count].SetPosition(1,0,6*height+hhh);
+woLegend3.Shapes[count].RectangleOptions.FillOpacity = 1;
+woLegend3.Shapes[count].RectangleOptions.FillColor = ColorTools.White;
+woLegend3.Shapes[count].RectangleOptions.BorderOpacity = 1;
+woLegend3.Shapes[count].RectangleOptions.BorderColor = ColorTools.White;
+
+//EndBlock	
+
+Viewpoint Mapviewpoint;
+Mapviewpoint.ViewpointType = "map";
+Mapviewpoint.ViewpointName = "mapview";
+Mapviewpoint.MapView.Width = 30;
+Mapviewpoint.MapView.Height = 15;
+Mapviewpoint.MapView.CenterLatitude = 36;
+Mapviewpoint.MapView.CenterLongitude = 126;
+
+Viewpoint viewpoint;
+viewpoint.ViewpointType = "view";
+viewpoint.ViewpointName = "3dView";
+viewpoint.ThreeDView.Declination = 30;
+viewpoint.ThreeDView.RightAscension = 126;
+viewpoint.ThreeDView.Radius = 19000;
+
+ViewWindow mapWindow1 ({scFormation, PointGroup1, woLegend1});
+ViewWindow mapWindow2 ({scFormation, PointGroup2, woLegend2});
+ViewWindow mapWindow3 ({scFormation, PointGroup3, woLegend3});
+ViewWindow ViewWindow1 ({scFormation, Region1});
+PlotWindow PlotWindow1 ({scFormation[0].ElapsedTime, reportContact});
+
+mapWindow1.LogoTextureFilename = "Soletop_White_1.png";
+mapWindow2.LogoTextureFilename = "Soletop_White_1.png";
+mapWindow3.LogoTextureFilename = "Soletop_White_1.png";
+ViewWindow1.LogoTextureFilename = "Soletop_White_1.png";
+//Block OutputLayout
+OutputLayout.SetWindowPosition(mapWindow1.ID,1,0,1,0);
+OutputLayout.SetWindowPosition(mapWindow2.ID,1,0.333,1,0);
+OutputLayout.SetWindowPosition(mapWindow3.ID,1,0.666,1,0);
+OutputLayout.SetWindowSize(mapWindow1.ID,1,0.333,1,0.5);
+OutputLayout.SetWindowSize(mapWindow2.ID,1,0.333,1,0.5);
+OutputLayout.SetWindowSize(mapWindow3.ID,1,0.333,1,0.5);
+
+OutputLayout.SetWindowPosition(ViewWindow1.ID,1,0,1,0.5);
+OutputLayout.SetWindowSize(ViewWindow1.ID,1,0.5,1,0.5);
+OutputLayout.SetWindowPosition(PlotWindow1.ID,1,0.5,1,0.5);
+OutputLayout.SetWindowSize(PlotWindow1.ID,1,0.5,1,0.5);
+
+OutputLayout.ApplyUpdates();
+//EndBlock
+
+PlotWindow1.WindowTitle = 'Contact';
+PlotWindow1.UseMonitorMode = 1;
+mapWindow1.WindowTitle = 'Min Revisit';
+mapWindow1.AddViewpoint(Mapviewpoint);
+mapWindow1.ActivateViewpoint(Mapviewpoint.ViewpointName);
+mapWindow1.ShowStatusText = 0;
+mapWindow2.WindowTitle = 'Avg Revisit';
+mapWindow2.AddViewpoint(Mapviewpoint);
+mapWindow2.ActivateViewpoint(Mapviewpoint.ViewpointName);
+mapWindow2.ShowStatusText = 0;
+mapWindow3.WindowTitle = 'Max Revisit';
+mapWindow3.AddViewpoint(Mapviewpoint);
+mapWindow3.ActivateViewpoint(Mapviewpoint.ViewpointName);
+mapWindow3.ShowStatusText = 0;
+
+ViewWindow1.WindowTitle = '3D View';
+ViewWindow1.AddViewpoint(viewpoint);
+ViewWindow1.ActivateViewpoint(viewpoint.ViewpointName);
+ViewWindow1.SetTailLength('scFormation',100);
+ViewWindow1.SetHistoryMode('scFormation', 0);
+
+For i = 0 to scFormation.Count-1;
+	mapWindow1.SetHistoryMode('scFormation['+i.ToString+']', 0);
+	mapWindow2.SetHistoryMode('scFormation['+i.ToString+']', 0);
+	mapWindow3.SetHistoryMode('scFormation['+i.ToString+']', 0);
+	mapWindow1.SetTailLength('scFormation['+i.ToString+']',80);
+	mapWindow2.SetTailLength('scFormation['+i.ToString+']',80);
+	mapWindow3.SetTailLength('scFormation['+i.ToString+']',80);
+	ViewWindow1.SetTailLength('scFormation['+i.ToString+']',100);
+	ViewWindow1.SetHistoryMode('scFormation['+i.ToString+']', 0);
+	
+	mapWindow1.SetShowBody('scFormation['+i.ToString+']', 0);
+	mapWindow2.SetShowBody('scFormation['+i.ToString+']', 0);
+	mapWindow3.SetShowBody('scFormation['+i.ToString+']', 0);
+	
+	mapWindow1.SetShowIcon('scFormation['+i.ToString+']', 1);
+	mapWindow2.SetShowIcon('scFormation['+i.ToString+']', 1);
+	mapWindow3.SetShowIcon('scFormation['+i.ToString+']', 1);
+	mapWindow1.SetObjectIcon(scFormation[i].ObjectId, 'Pan_Green_Circle.png');
+	mapWindow2.SetObjectIcon(scFormation[i].ObjectId, 'Pan_Green_Circle.png');
+	mapWindow3.SetObjectIcon(scFormation[i].ObjectId, 'Pan_Green_Circle.png');
+	mapWindow1.SetObjectIconSize(scFormation[i].ObjectId, 10);
+	mapWindow2.SetObjectIconSize(scFormation[i].ObjectId, 10);
+	mapWindow3.SetObjectIconSize(scFormation[i].ObjectId, 10);
+	
+End;
+
+PlotWindow1.YAxis.LabelsSpacing = 1;
+PlotWindow1.PlotSubTitle.Visible = 0;
+PlotWindow1.Legend.Visible = 0;
+PlotWindow1.XAxis.LabelsFont.Size = 11;
+PlotWindow1.XAxis.Title.Font.Size = 11;
+PlotWindow1.YAxis.LabelsFont.Size = 11; 
+PlotWindow1.YAxis.Title.Font.Size = 11; 
+PlotWindow1.XAxis.Title.Text = 'ElapsedTime [day]';
+PlotWindow1.YAxis.Title.Text = 'Contact';
+PlotWindow1.PlotTitle.Text = 'Contact to Region';
+
+
+// Apply 3D model to Cloudsat spacecraft
+For i = 0 to scFormation.Count-1;
+	Step scFormation[i] to (scFormation[i].EpochText == "Jan 01 2020 11:00:00.000000000");
+End;
+
+
+While (scFormation[0].ElapsedTime < TimeSpan.FromDays(period));
+	      //CoverageChange will be 1 if any coverage statistic was updated
+
+	//CoverageChange = PointGroup1.Coverage(scFormation,PointCoverage,PointRevisit,PointInView);
+	PointGroup1.Coverage(scFormation,PointCoverage,PointRevisit,PointInView);
+	PointGroup2.Coverage(scFormation,PointCoverage,PointRevisit,PointInView);
+	PointGroup3.Coverage(scFormation,PointCoverage,PointRevisit,PointInView);
+
+
+	//If (CoverageChange == 1);
+	    /*For i = 0 to PointGroup2.Count - 1;
+
+			PointGroup2[i].Color = ColorTools.InterpolateColorRGB({ColorTools.Green, ColorTools.Red}, 
+													   PointRevisit[NumOfPoints+i], min_2rt/60/24, max_2rt/60/24);
+	    End;*/
+	//End;
+	For i = 0 to PointGroup1.Count - 1;
+		If(PointRevisit[i] < 2);
+			PointGroup1[i].Color = ColorTools.Black;
+		Else;
+			PointGroup1[i].Color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, PointRevisit[NumOfPoints*5+i], min_1rt/24, max_1rt/24);
+		End;
+	End;
+	For i = 0 to PointGroup2.Count - 1;
+		If(PointRevisit[i] < 2);
+			PointGroup2[i].Color = ColorTools.Black;
+		Else;
+			PointGroup2[i].Color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, PointRevisit[NumOfPoints+i], min_1rt/24, max_1rt/24);
+		End;
+	End;
+	For i = 0 to PointGroup3.Count - 1;
+		If(PointRevisit[i] < 2);
+			PointGroup3[i].Color = ColorTools.Black;
+		Else;
+			PointGroup3[i].Color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, PointRevisit[NumOfPoints*4+i], min_1rt/24, max_1rt/24);
+		End;
+	End;
+	For i = 0 to scFormation.Count-1;
+		If(reportContact == 0 and scFormation[i].InView(Region1) == 0);
+			reportContact = 0;
+		Else;
+			reportContact = 1;
+		End;
+	End;
+	Update PlotWindow1;
+	Update ViewWindow1;
+	Update mapWindow3;
+	Update mapWindow2;
+	Update mapWindow1;
+ 	Step scFormation;
+	reportContact = 0; 
+	//Report scFormation[0].ElapsedTime to Console;
+End;
+
+//Report PointRevisit[NumOfPoints:NumOfPoints*2-1].ToColumnMatrix to 'avg_rt_360.csv';
+//Report PointRevisit[NumOfPoints*4:NumOfPoints*5-1].ToColumnMatrix to 'max_rt_360.csv';
+//Report PointRevisit[NumOfPoints*5:NumOfPoints*6-1].ToColumnMatrix to 'min_rt_360.csv';
+
+Array a;
+Variable indx;
+a = PointRevisit[NumOfPoints:NumOfPoints*2-1];
+
+a.Max(indx);
+Report PointGroup1[indx].Longitude;
+Report PointGroup1[indx].Latitude;
+
+//ApiLabel "SimRevisit state";
+
+
+
+
+
+
+]]></FreeFormScript>
+      </FreeForm>
+    </ProjectCommands>
+  </ProjectMissionSequence>
+  <ProjectScript><![CDATA[
+// Mission Plan Description and Console Setup
+
+// In this example, Spacecraft2 is viewed by a sensor on Spacecraft1, and 
+// several types of output are generated.  There is a 3D ViewWindow showing
+// the relative positions of the two spacecraft, a sensor-view ViewWindow 
+// showing the perspective of a sensor attached to Spacecraft1 pointing along
+// the SC1 body x-axis, a Cartesian plot of the range between the two Spacecraft,
+// and a polar plot of the azimuth and elevation from Spacecraft1 to Spacecraft2.
+
+
+// Console Setup
+Console.BackColor = ColorTools.Black;
+Console.CurrentTextColor = ColorTools.Khaki;
+Console.Dimension = 35;
+Console.DockMode = 3;
+Console.WordWrap = 1;
+
+Report "In this example, Spacecraft2 is viewed by a sensor on Spacecraft1, and several types of output are generated.  There is a 3D ViewWindow showing the relative positions of the two spacecraft, a sensor-view ViewWindow showing the perspective of a sensor attached to Spacecraft1 pointing along the SC1 body x-axis, a Cartesian plot of the range between the two Spacecraft, and a polar plot of the azimuth and elevation from Spacecraft1 to Spacecraft2." to Console;
+
+//ApiLabel "Description state";
+
+//*****************************************************************************************
+
+Array PointCoverage[0]; // Array to hold coverage statistics for each point
+
+Array PointRevisit[0];  // Array to hold revisit statistics for each point
+
+Array PointInView[0];   // Array to hold per sensor coverage indication for each point
+
+Array avgArray[0];
+Array maxArray[0];
+Array minArray[0];
+
+Variable CoverageChange;
+
+Variable i;
+Variable j;
+Variable l;
+Variable k;
+
+Region target;
+String regionName;
+
+Variable theta_inci_min;
+Variable theta_inci_max;
+Variable h;
+Variable inc;
+Variable raan;
+Variable ecc;
+Variable ta;
+Variable argprg;
+Variable raanSpreading;
+Variable raant;
+Variable lookAngle;
+Variable stepSize;
+
+Variable look_ang_range;
+Variable sensorHeight;
+
+Variable num_orbit_plane;
+Variable num_sc_in_plane;
+Variable num_total_sats;
+
+Variable period;
+String propType;
+
+Variable reportContact = 1;
+
+//*****************************************************************************************
+//*****************************************************************************************
+theta_inci_max = 35;
+theta_inci_min = 15;
+h = 500;
+inc = 42;
+num_total_sats = 1;
+lookAngle = 0;
+period = 60;
+num_orbit_plane = 1;
+
+sensorHeight = 10;
+If(num_total_sats != 0);
+	num_sc_in_plane = num_total_sats/num_orbit_plane;
+Else;
+	num_sc_in_plane = 0;
+End;
+
+scFormation.Count = num_total_sats;
+scFormation.ViewAsGroup = 0;
+stepSize = 10;
+ecc = 0.0007552;
+argprg = 90;
+raan = 0;
+
+propType = "J2Mean";
+raanSpreading = 360;    // delta = 360 , star = 180, custum = 24*num_orbit_plane
+If(raanSpreading<0);
+    raanSpreading = 24 * num_orbit_plane;
+End;
+raant = raan + raanSpreading/num_orbit_plane*j;
+// ApiLabel "Set state";
+
+//**********************************************************************************************************************************************************************************
+
+
+
+Define Procedure PopulatePointGroupBasedOnRegion(PointGroup pg, Region analysisRegion, Variable initialNumberOfPoints, Array minLatLon, Array maxLatLon);
+
+	// Procedure to setup a PointGroup based off a defined region
+	
+	// Object creation
+	Variable i;
+	Variable j;
+	Variable maxLat = -90;
+	Variable minLat = 90;
+	Variable maxLon = 0;
+	Variable minLon = 360;
+	Variable lon;
+	Variable lat;
+	Variable prevLon;
+	Variable prevLat;
+	Variable lonSwitch;
+	Variable latSwitch;
+	Variable numOfPoints;
+	Variable aspectRatio;
+	Variable pointsAlongLon;
+	Variable pointsAlongLat;
+	Variable count;
+	
+	PointGroup boundingBoxPointGroup;
+	
+	Spacecraft sc;
+	
+	Array latPointsInRegion[0];
+	Array lonPointsInRegion[0];
+
+	//Block Determine bounding box for region
+	
+	For i = 0 to analysisRegion.NumberOfVertices-1;
+
+		If (sign(analysisRegion.Latitude[i]) != sign(prevLat));
+			If ((analysisRegion.Latitude[i] >= -90 and analysisRegion.Latitude[i] < -45) or
+				(analysisRegion.Latitude[i] <= 90 and analysisRegion.Latitude[i] > 45));
+				
+				latSwitch = 1;
+			Else;
+				
+				latSwitch = 0;
+			End;
+		End;			
+
+		If (sign(analysisRegion.Longitude[i]) != sign(prevLon));
+			If ((analysisRegion.Longitude[i] >= -180 and analysisRegion.Longitude[i] < -90) or
+				(analysisRegion.Longitude[i] <= 180 and analysisRegion.Longitude[i] > 90));
+				
+				lonSwitch = 1;
+			Else;
+				
+				lonSwitch = 0;
+			End;
+		End;			
+
+		prevLat = analysisRegion.Latitude[i];
+		prevLon = analysisRegion.Longitude[i];
+		
+		// If long switches signs around +/- 180, do this - otherwise do nothing
+		If (lonSwitch == 1 and analysisRegion.Longitude[i] < 0);
+			
+			lon = analysisRegion.Longitude[i] + 360;
+		Else;
+			
+			lon = analysisRegion.Longitude[i];
+		End;
+
+		// If lat switches signs around +/- 90, do this - otherwise do nothing
+		If (latSwitch == 1 and analysisRegion.Latitude[i] < 0);
+			
+			lat = analysisRegion.Latitude[i];// + 90;
+		Else;
+			
+			lat = analysisRegion.Latitude[i];
+		End;
+
+		If (lat < minLat);
+			
+			minLat = lat;
+		End;
+
+		If (lat > maxLat);
+			
+			maxLat = lat;
+		End;
+
+		If (lon < minLon);
+			
+			minLon = lon;
+		End;
+
+		If (lon > maxLon);
+			
+			maxLon = lon;
+		End;
+	End;
+	
+	// Set min and max Lat Lon
+	
+	minLatLon = {minLat, minLon};
+	maxLatLon = {maxLat, maxLon};
+	
+	//EndBlock
+
+	//Block Create PointGroup evenly spaced over bounding box
+
+	// Create a PointGroup evenly spaced over max/min
+	
+	numOfPoints = initialNumberOfPoints;  // Not necessarily final number of points: Rectangle will be largest that preserves aspect ratio. Use at least 150 pts.
+	aspectRatio = (maxLon - minLon)/(maxLat - minLat);      // Determine box size
+	pointsAlongLon = round(sqrt(numOfPoints*aspectRatio));  // Calculate number of columns
+	pointsAlongLat = round(pointsAlongLon/aspectRatio);     // Calculate number of rows
+
+	// Calculate number of points
+	count = (pointsAlongLat+1)*(pointsAlongLon+1);
+	
+	// Build rectangular PointGroup
+	boundingBoxPointGroup.PointDefinition = 2;
+	boundingBoxPointGroup.Count = count;
+	count = 0;
+	For i = minLat to maxLat step (maxLat - minLat)/pointsAlongLat;
+
+		For j = minLon to maxLon step (maxLon - minLon)/pointsAlongLon;
+
+			If (j > 360);
+				
+				j -= 360;
+			End;
+			If (i > 90);
+				
+				i -= 90;
+			End;
+
+			boundingBoxPointGroup[count].Longitude = j;
+			boundingBoxPointGroup[count].Latitude = i;
+			count++;
+		End;
+	End;
+	//EndBlock
+
+	//Block Define PointGroup in Region
+
+	// Place a Spacecraft at each point and determine whether SC is In Region
+	// If yes, add that point to latPointsInRegion and lonPointsInRegion Arrays
+
+	For i = 0 to boundingBoxPointGroup.Count-1;
+
+		// Assign Spacecraft location to current point of boundingBoxPointGroup
+		sc.Latitude = boundingBoxPointGroup[i].Latitude;
+		sc.Longitude = boundingBoxPointGroup[i].Longitude;
+
+		// Check whether the current point is inside the Region
+		If (sc.InRegion(analysisRegion) == 1);
+
+			// If so, add point to Arrays
+			latPointsInRegion.PushBack(boundingBoxPointGroup[i].Latitude);
+			lonPointsInRegion.PushBack(boundingBoxPointGroup[i].Longitude);
+		End;
+	End;
+
+	// Initialize pg with number of points determined above
+	pg.PointDefinition = 2;
+	pg.Count = latPointsInRegion.Dimension;
+
+	// Add points in Arrays to pg
+	For i = 0 to pg.Count-1;
+
+		pg[i].Latitude = latPointsInRegion[i];
+		pg[i].Longitude = lonPointsInRegion[i];
+	End;
+	
+	// Return value for number of points
+	initialNumberOfPoints = pg.NumberOfPoints;
+	//EndBlock
+EndProcedure;
+
+//ApiLabel "SetRegion state";
+
+//**********************************************************************************************************************************************************************************
+
+look_ang_range = 3.9 + lookAngle;
+
+
+Variable theta_in_earth;
+Variable slant_range;
+
+theta_in_earth = ((rad(theta_inci_max) - asin( (Earth.Radius / ( Earth.Radius + h)) * sin(rad(180 - theta_inci_max)))) + (rad(theta_inci_min) - asin( (Earth.Radius / ( Earth.Radius + h)) * sin(rad(180 - theta_inci_min)))))/2; 
+slant_range = sqrt((Earth.Radius+h)^2 + Earth.Radius^2 - 2 * (Earth.Radius+h) * Earth.Radius * cos(theta_in_earth));
+
+Variable tilte_in_roll;
+
+tilte_in_roll = deg(acos((( Earth.Radius + h ) - Earth.Radius*cos(theta_in_earth)) / slant_range ));
+
+//ApiLabel "SetSensor state";
+
+//**********************************************************************************************************************************************************************************
+
+
+
+For i = 0 to scFormation.Count-1;
+
+	 scFormation[i].AddSensor("sensor1" + i.ToString+j.ToString);        // Add a sensor to each Spacecraft in the Formation
+	 scFormation[i].SetPropagatorType(propType);
+
+End;
+
+//ApiLabel "GenerateSat state";
+
+If(num_total_sats != 0);
+	For l = 0 to num_orbit_plane-1;
+		For k = 0 to num_sc_in_plane-1;
+			scFormation[k+num_sc_in_plane*l].A = Earth.Radius + h;
+			scFormation[k+num_sc_in_plane*l].I = inc;
+			scFormation[k+num_sc_in_plane*l].RAAN = raanSpreading/num_orbit_plane*l;
+			scFormation[k+num_sc_in_plane*l].E = ecc;
+			scFormation[k+num_sc_in_plane*l].TA = 360/num_sc_in_plane*k + 360/num_total_sats*l;
+			scFormation[k+num_sc_in_plane*l].W = argprg;
+			scFormation[k+num_sc_in_plane*l].HistoryMode = 1;
+			scFormation[k+num_sc_in_plane*l].Color = RGB(1-0.5/num_orbit_plane*l,1/num_orbit_plane*l,52/235);
+		
+			scFormation[k+num_sc_in_plane*l].Sensors[0].MaskType = 3;
+			scFormation[k+num_sc_in_plane*l].Sensors[0].RectangularHalfAngles = {sensorHeight/2, look_ang_range};
+		
+			scFormation[k+num_sc_in_plane*l].Propagator.StepSize = TimeSpan.FromSeconds(stepSize);
+		
+		End;
+	End;
+End;
+
+//**********************************************************************************************************************************************************************************
+
+// Create a PointGroup evenly spaced over max/min
+
+// Create a PointGroup evenly spaced over max/min
+
+Get Region1 from "KoreaOceanEEZ.reg";  // Load Continental US region
+Array minLatLon;
+Array maxLatLon;
+Variable NumOfPoints;
+View Region1;
+NumOfPoints = 1250;
+
+PointGroup1.PointDefinition = 2;
+PointGroup1.Count = NumOfPoints;
+PointGroup1.GroupSize = 7;
+PointGroup2.PointDefinition = 2;
+PointGroup2.Count = NumOfPoints;
+PointGroup2.GroupSize = 7;
+PointGroup3.PointDefinition = 2;
+PointGroup3.Count = NumOfPoints;
+PointGroup3.GroupSize = 7;
+
+Call PopulatePointGroupBasedOnRegion(PointGroup1, Region1, PointGroup1.Count, minLatLon, maxLatLon);
+minLatLon.Clear();
+maxLatLon.Clear();
+Call PopulatePointGroupBasedOnRegion(PointGroup2, Region1, PointGroup2.Count, minLatLon, maxLatLon);
+minLatLon.Clear();
+maxLatLon.Clear();
+Call PopulatePointGroupBasedOnRegion(PointGroup3, Region1, PointGroup3.Count, minLatLon, maxLatLon);
+NumOfPoints = PointGroup1.Count;
+//ApiLabel "PointGroup state";
+
+//******************************************************************************************************************************************************************************
+Variable width = 400;
+Variable height = 0;
+Variable count;
+Variable scaleFactor = 19;
+Variable color;
+Variable hhh = 0;
+Variable min_1rt = 24;		///minute Min
+Variable max_1rt = 360;		///minute Min
+
+Variable min_2rt = 24;		///minute Avg
+Variable max_2rt = 360;		///minute Avg
+
+Variable min_3rt = 24;		///minute Max
+Variable max_3rt = 360;		///minute Max
+//Block Legend Overlay		 Min
+String min_1rt_range = min_1rt.ToString;
+String max_1rt_range = max_1rt.ToString;
+count = 0;
+WindowOverlay woLegend1;
+
+woLegend1.RemoveAllShapes();
+woLegend1.AddShape();
+woLegend1.Shapes[0].Type = "Rectangle";
+woLegend1.Shapes[0].SetSize(1, width, 40);
+woLegend1.Shapes[0].SetPosition(1,0,6*height+hhh);
+woLegend1.Shapes[0].RectangleOptions.FillOpacity = 0;
+woLegend1.Shapes[0].RectangleOptions.FillColor = ColorTools.Black;
+woLegend1.Shapes[0].RectangleOptions.BorderOpacity = 1;
+woLegend1.Shapes[0].RectangleOptions.BorderColor = ColorTools.White;
+woLegend1.Shapes[0].TextOptions.SetBackdropCornerRadius(1, 0);
+woLegend1.Shapes[0].RectangleOptions.BorderWidth = 1;
+
+woLegend1.AddShape();
+woLegend1.Shapes[1].Type = "Text";
+woLegend1.Shapes[1].SetSize(1,width,25);
+woLegend1.Shapes[1].SetPosition(1,0,6*height+40+hhh);
+woLegend1.Shapes[1].TextOptions.BackdropFillOpacity = 1;
+woLegend1.Shapes[1].TextOptions.BackdropFillColor = ColorTools.Black;
+woLegend1.Shapes[1].TextOptions.BackdropBorderOpacity = 1;
+woLegend1.Shapes[1].TextOptions.BackdropBorderColor = ColorTools.White;
+woLegend1.Shapes[1].TextOptions.AlignmentHorizontal = 1;
+woLegend1.Shapes[1].TextOptions.AlignmentVertical   = 1;
+woLegend1.Shapes[1].TextOptions.Font.Size = 11;
+woLegend1.Shapes[1].TextOptions.Font.Bold = 1;
+woLegend1.Shapes[1].TextOptions.Text = min_1rt_range + "                                 Min Revisit Time[hr]                              "+ max_1rt_range;
+
+woLegend1.AddShape();
+woLegend1.Shapes[2].Type = "Rectangle";
+woLegend1.Shapes[2].SetSize(1,width,25);
+woLegend1.Shapes[2].SetPosition(1,0,6*height+40+hhh);
+woLegend1.Shapes[2].RectangleOptions.FillOpacity = 1;
+woLegend1.Shapes[2].RectangleOptions.FillColor = ColorTools.Black;
+woLegend1.Shapes[2].RectangleOptions.BorderOpacity = 1;
+woLegend1.Shapes[2].RectangleOptions.BorderColor = ColorTools.White;
+count=3;
+
+//Iterate through the colors represented in the points to create a legend
+For i = 0 to scaleFactor;
+	color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, i/(scaleFactor));
+	woLegend1.AddShape();
+	woLegend1.Shapes[i+3].Type = "Rectangle";
+	woLegend1.Shapes[i+3].SetSize(1,width/(scaleFactor+1),40);
+	woLegend1.Shapes[i+3].SetPosition(1,i*width/(scaleFactor+1),6*height+hhh);
+	woLegend1.Shapes[i+3].RectangleOptions.BorderWidth = 0;
+	woLegend1.Shapes[i+3].RectangleOptions.FillColor = color;
+	woLegend1.Shapes[i+3].RectangleOptions.BorderColor = color;
+	woLegend1.Shapes[i+3].RectangleOptions.FillOpacity = 1;
+	
+	count++;
+End;
+
+woLegend1.AddShape();
+woLegend1.Shapes[count].Type="Rectangle";
+woLegend1.Shapes[count].SetSize(1,width,40);
+woLegend1.Shapes[count].SetPosition(1,0,6*height+hhh);
+woLegend1.Shapes[count].RectangleOptions.FillOpacity = 1;
+woLegend1.Shapes[count].RectangleOptions.FillColor = ColorTools.White;
+woLegend1.Shapes[count].RectangleOptions.BorderOpacity = 1;
+woLegend1.Shapes[count].RectangleOptions.BorderColor = ColorTools.White;
+
+//EndBlock	
+//Block Legend Overlay		 Avg
+String min_2rt_range = min_2rt.ToString;
+String max_2rt_range = max_2rt.ToString;
+count = 0;
+WindowOverlay woLegend2;
+
+woLegend2.RemoveAllShapes();
+woLegend2.AddShape();
+woLegend2.Shapes[0].Type = "Rectangle";
+woLegend2.Shapes[0].SetSize(1, width, 40);
+woLegend2.Shapes[0].SetPosition(1,0,6*height+hhh);
+woLegend2.Shapes[0].RectangleOptions.FillOpacity = 0;
+woLegend2.Shapes[0].RectangleOptions.FillColor = ColorTools.Black;
+woLegend2.Shapes[0].RectangleOptions.BorderOpacity = 1;
+woLegend2.Shapes[0].RectangleOptions.BorderColor = ColorTools.White;
+woLegend2.Shapes[0].TextOptions.SetBackdropCornerRadius(1, 0);
+woLegend2.Shapes[0].RectangleOptions.BorderWidth = 1;
+
+
+woLegend2.AddShape();
+woLegend2.Shapes[1].Type = "Text";
+woLegend2.Shapes[1].SetSize(1,width,25);
+woLegend2.Shapes[1].SetPosition(1,0,6*height+40+hhh);
+woLegend2.Shapes[1].TextOptions.BackdropFillOpacity = 1;
+woLegend2.Shapes[1].TextOptions.BackdropFillColor = ColorTools.Black;
+woLegend2.Shapes[1].TextOptions.BackdropBorderOpacity = 1;
+woLegend2.Shapes[1].TextOptions.BackdropBorderColor = ColorTools.White;
+woLegend2.Shapes[1].TextOptions.AlignmentHorizontal = 1;
+woLegend2.Shapes[1].TextOptions.AlignmentVertical   = 1;
+woLegend2.Shapes[1].TextOptions.Font.Size = 11;
+woLegend2.Shapes[1].TextOptions.Font.Bold = 1;
+woLegend2.Shapes[1].TextOptions.Text = min_2rt_range + "                                Average Revisit Time[hr]                             "+ max_2rt_range;
+
+woLegend2.AddShape();
+woLegend2.Shapes[2].Type = "Rectangle";
+woLegend2.Shapes[2].SetSize(1,width,25);
+woLegend2.Shapes[2].SetPosition(1,0,6*height+40+hhh);
+woLegend2.Shapes[2].RectangleOptions.FillOpacity = 1;
+woLegend2.Shapes[2].RectangleOptions.FillColor = ColorTools.Black;
+woLegend2.Shapes[2].RectangleOptions.BorderOpacity = 1;
+woLegend2.Shapes[2].RectangleOptions.BorderColor = ColorTools.White;
+count=3;
+
+//Iterate through the colors represented in the points to create a legend
+For i = 0 to scaleFactor;
+	color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, i/(scaleFactor));
+	woLegend2.AddShape();
+	woLegend2.Shapes[i+3].Type = "Rectangle";
+	woLegend2.Shapes[i+3].SetSize(1,width/(scaleFactor+1),40);
+	woLegend2.Shapes[i+3].SetPosition(1,i*width/(scaleFactor+1),6*height+hhh);
+	woLegend2.Shapes[i+3].RectangleOptions.BorderWidth = 0;
+	woLegend2.Shapes[i+3].RectangleOptions.FillColor = color;
+	woLegend2.Shapes[i+3].RectangleOptions.BorderColor = color;
+	woLegend2.Shapes[i+3].RectangleOptions.FillOpacity = 1;
+	
+	count++;
+End;
+
+woLegend2.AddShape();
+woLegend2.Shapes[count].Type="Rectangle";
+woLegend2.Shapes[count].SetSize(1,width,40);
+woLegend2.Shapes[count].SetPosition(1,0,6*height+hhh);
+woLegend2.Shapes[count].RectangleOptions.FillOpacity = 1;
+woLegend2.Shapes[count].RectangleOptions.FillColor = ColorTools.White;
+woLegend2.Shapes[count].RectangleOptions.BorderOpacity = 1;
+woLegend2.Shapes[count].RectangleOptions.BorderColor = ColorTools.White;
+
+//EndBlock	
+//Block Legend Overlay		 Max
+String min_3rt_range = min_3rt.ToString;
+String max_3rt_range = max_3rt.ToString;
+count = 0;
+WindowOverlay woLegend3;
+
+woLegend3.RemoveAllShapes();
+woLegend3.AddShape();
+woLegend3.Shapes[0].Type = "Rectangle";
+woLegend3.Shapes[0].SetSize(1, width, 40);
+woLegend3.Shapes[0].SetPosition(1,0,6*height+hhh);
+woLegend3.Shapes[0].RectangleOptions.FillOpacity = 0;
+woLegend3.Shapes[0].RectangleOptions.FillColor = ColorTools.Black;
+woLegend3.Shapes[0].RectangleOptions.BorderOpacity = 1;
+woLegend3.Shapes[0].RectangleOptions.BorderColor = ColorTools.White;
+woLegend3.Shapes[0].TextOptions.SetBackdropCornerRadius(1, 0);
+woLegend3.Shapes[0].RectangleOptions.BorderWidth = 1;
+
+woLegend3.AddShape();
+woLegend3.Shapes[1].Type = "Text";
+woLegend3.Shapes[1].SetSize(1,width,25);
+woLegend3.Shapes[1].SetPosition(1,0,6*height+40+hhh);
+woLegend3.Shapes[1].TextOptions.BackdropFillOpacity = 1;
+woLegend3.Shapes[1].TextOptions.BackdropFillColor = ColorTools.Black;
+woLegend3.Shapes[1].TextOptions.BackdropBorderOpacity = 1;
+woLegend3.Shapes[1].TextOptions.BackdropBorderColor = ColorTools.White;
+woLegend3.Shapes[1].TextOptions.AlignmentHorizontal = 1;
+woLegend3.Shapes[1].TextOptions.AlignmentVertical   = 1;
+woLegend3.Shapes[1].TextOptions.Font.Size = 11;
+woLegend3.Shapes[1].TextOptions.Font.Bold = 1;  
+woLegend3.Shapes[1].TextOptions.Text = min_3rt_range + "                                      Max Revisit Time[hr]                                   "+ max_3rt_range;
+
+woLegend3.AddShape();
+woLegend3.Shapes[2].Type = "Rectangle";
+woLegend3.Shapes[2].SetSize(1,width,25);
+woLegend3.Shapes[2].SetPosition(1,0,6*height+40+hhh);
+woLegend3.Shapes[2].RectangleOptions.FillOpacity = 1;
+woLegend3.Shapes[2].RectangleOptions.FillColor = ColorTools.Black;
+woLegend3.Shapes[2].RectangleOptions.BorderOpacity = 1;
+woLegend3.Shapes[2].RectangleOptions.BorderColor = ColorTools.White;
+count=3;
+
+//Iterate through the colors represented in the points to create a legend
+For i = 0 to scaleFactor;
+	color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, i/(scaleFactor));
+	woLegend3.AddShape();
+	woLegend3.Shapes[i+3].Type = "Rectangle";
+	woLegend3.Shapes[i+3].SetSize(1,width/(scaleFactor+1),40);
+	woLegend3.Shapes[i+3].SetPosition(1,i*width/(scaleFactor+1),6*height+hhh);
+	woLegend3.Shapes[i+3].RectangleOptions.BorderWidth = 0;
+	woLegend3.Shapes[i+3].RectangleOptions.FillColor = color;
+	woLegend3.Shapes[i+3].RectangleOptions.BorderColor = color;
+	woLegend3.Shapes[i+3].RectangleOptions.FillOpacity = 1;
+	
+	count++;
+End;
+
+woLegend3.AddShape();
+woLegend3.Shapes[count].Type="Rectangle";
+woLegend3.Shapes[count].SetSize(1,width,40);
+woLegend3.Shapes[count].SetPosition(1,0,6*height+hhh);
+woLegend3.Shapes[count].RectangleOptions.FillOpacity = 1;
+woLegend3.Shapes[count].RectangleOptions.FillColor = ColorTools.White;
+woLegend3.Shapes[count].RectangleOptions.BorderOpacity = 1;
+woLegend3.Shapes[count].RectangleOptions.BorderColor = ColorTools.White;
+
+//EndBlock	
+
+Viewpoint Mapviewpoint;
+Mapviewpoint.ViewpointType = "map";
+Mapviewpoint.ViewpointName = "mapview";
+Mapviewpoint.MapView.Width = 30;
+Mapviewpoint.MapView.Height = 15;
+Mapviewpoint.MapView.CenterLatitude = 36;
+Mapviewpoint.MapView.CenterLongitude = 126;
+
+Viewpoint viewpoint;
+viewpoint.ViewpointType = "view";
+viewpoint.ViewpointName = "3dView";
+viewpoint.ThreeDView.Declination = 30;
+viewpoint.ThreeDView.RightAscension = 126;
+viewpoint.ThreeDView.Radius = 19000;
+
+ViewWindow mapWindow1 ({scFormation, PointGroup1, woLegend1});
+ViewWindow mapWindow2 ({scFormation, PointGroup2, woLegend2});
+ViewWindow mapWindow3 ({scFormation, PointGroup3, woLegend3});
+ViewWindow ViewWindow1 ({scFormation, Region1});
+PlotWindow PlotWindow1 ({scFormation[0].ElapsedTime, reportContact});
+
+mapWindow1.LogoTextureFilename = "Soletop_White_1.png";
+mapWindow2.LogoTextureFilename = "Soletop_White_1.png";
+mapWindow3.LogoTextureFilename = "Soletop_White_1.png";
+ViewWindow1.LogoTextureFilename = "Soletop_White_1.png";
+//Block OutputLayout
+OutputLayout.SetWindowPosition(mapWindow1.ID,1,0,1,0);
+OutputLayout.SetWindowPosition(mapWindow2.ID,1,0.333,1,0);
+OutputLayout.SetWindowPosition(mapWindow3.ID,1,0.666,1,0);
+OutputLayout.SetWindowSize(mapWindow1.ID,1,0.333,1,0.5);
+OutputLayout.SetWindowSize(mapWindow2.ID,1,0.333,1,0.5);
+OutputLayout.SetWindowSize(mapWindow3.ID,1,0.333,1,0.5);
+
+OutputLayout.SetWindowPosition(ViewWindow1.ID,1,0,1,0.5);
+OutputLayout.SetWindowSize(ViewWindow1.ID,1,0.5,1,0.5);
+OutputLayout.SetWindowPosition(PlotWindow1.ID,1,0.5,1,0.5);
+OutputLayout.SetWindowSize(PlotWindow1.ID,1,0.5,1,0.5);
+
+OutputLayout.ApplyUpdates();
+//EndBlock
+
+PlotWindow1.WindowTitle = 'Contact';
+PlotWindow1.UseMonitorMode = 1;
+mapWindow1.WindowTitle = 'Min Revisit';
+mapWindow1.AddViewpoint(Mapviewpoint);
+mapWindow1.ActivateViewpoint(Mapviewpoint.ViewpointName);
+mapWindow1.ShowStatusText = 0;
+mapWindow2.WindowTitle = 'Avg Revisit';
+mapWindow2.AddViewpoint(Mapviewpoint);
+mapWindow2.ActivateViewpoint(Mapviewpoint.ViewpointName);
+mapWindow2.ShowStatusText = 0;
+mapWindow3.WindowTitle = 'Max Revisit';
+mapWindow3.AddViewpoint(Mapviewpoint);
+mapWindow3.ActivateViewpoint(Mapviewpoint.ViewpointName);
+mapWindow3.ShowStatusText = 0;
+
+ViewWindow1.WindowTitle = '3D View';
+ViewWindow1.AddViewpoint(viewpoint);
+ViewWindow1.ActivateViewpoint(viewpoint.ViewpointName);
+ViewWindow1.SetTailLength('scFormation',100);
+ViewWindow1.SetHistoryMode('scFormation', 0);
+
+For i = 0 to scFormation.Count-1;
+	mapWindow1.SetHistoryMode('scFormation['+i.ToString+']', 0);
+	mapWindow2.SetHistoryMode('scFormation['+i.ToString+']', 0);
+	mapWindow3.SetHistoryMode('scFormation['+i.ToString+']', 0);
+	mapWindow1.SetTailLength('scFormation['+i.ToString+']',80);
+	mapWindow2.SetTailLength('scFormation['+i.ToString+']',80);
+	mapWindow3.SetTailLength('scFormation['+i.ToString+']',80);
+	ViewWindow1.SetTailLength('scFormation['+i.ToString+']',100);
+	ViewWindow1.SetHistoryMode('scFormation['+i.ToString+']', 0);
+	
+	mapWindow1.SetShowBody('scFormation['+i.ToString+']', 0);
+	mapWindow2.SetShowBody('scFormation['+i.ToString+']', 0);
+	mapWindow3.SetShowBody('scFormation['+i.ToString+']', 0);
+	
+	mapWindow1.SetShowIcon('scFormation['+i.ToString+']', 1);
+	mapWindow2.SetShowIcon('scFormation['+i.ToString+']', 1);
+	mapWindow3.SetShowIcon('scFormation['+i.ToString+']', 1);
+	mapWindow1.SetObjectIcon(scFormation[i].ObjectId, 'Pan_Green_Circle.png');
+	mapWindow2.SetObjectIcon(scFormation[i].ObjectId, 'Pan_Green_Circle.png');
+	mapWindow3.SetObjectIcon(scFormation[i].ObjectId, 'Pan_Green_Circle.png');
+	mapWindow1.SetObjectIconSize(scFormation[i].ObjectId, 10);
+	mapWindow2.SetObjectIconSize(scFormation[i].ObjectId, 10);
+	mapWindow3.SetObjectIconSize(scFormation[i].ObjectId, 10);
+	
+End;
+
+PlotWindow1.YAxis.LabelsSpacing = 1;
+PlotWindow1.PlotSubTitle.Visible = 0;
+PlotWindow1.Legend.Visible = 0;
+PlotWindow1.XAxis.LabelsFont.Size = 11;
+PlotWindow1.XAxis.Title.Font.Size = 11;
+PlotWindow1.YAxis.LabelsFont.Size = 11; 
+PlotWindow1.YAxis.Title.Font.Size = 11; 
+PlotWindow1.XAxis.Title.Text = 'ElapsedTime [day]';
+PlotWindow1.YAxis.Title.Text = 'Contact';
+PlotWindow1.PlotTitle.Text = 'Contact to Region';
+
+
+// Apply 3D model to Cloudsat spacecraft
+For i = 0 to scFormation.Count-1;
+	Step scFormation[i] to (scFormation[i].EpochText == "Jan 01 2020 11:00:00.000000000");
+End;
+
+
+While (scFormation[0].ElapsedTime < TimeSpan.FromDays(period));
+	      //CoverageChange will be 1 if any coverage statistic was updated
+
+	//CoverageChange = PointGroup1.Coverage(scFormation,PointCoverage,PointRevisit,PointInView);
+	PointGroup1.Coverage(scFormation,PointCoverage,PointRevisit,PointInView);
+	PointGroup2.Coverage(scFormation,PointCoverage,PointRevisit,PointInView);
+	PointGroup3.Coverage(scFormation,PointCoverage,PointRevisit,PointInView);
+
+
+	//If (CoverageChange == 1);
+	    /*For i = 0 to PointGroup2.Count - 1;
+
+			PointGroup2[i].Color = ColorTools.InterpolateColorRGB({ColorTools.Green, ColorTools.Red}, 
+													   PointRevisit[NumOfPoints+i], min_2rt/60/24, max_2rt/60/24);
+	    End;*/
+	//End;
+	For i = 0 to PointGroup1.Count - 1;
+		If(PointRevisit[i] < 2);
+			PointGroup1[i].Color = ColorTools.Black;
+		Else;
+			PointGroup1[i].Color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, PointRevisit[NumOfPoints*5+i], min_1rt/24, max_1rt/24);
+		End;
+	End;
+	For i = 0 to PointGroup2.Count - 1;
+		If(PointRevisit[i] < 2);
+			PointGroup2[i].Color = ColorTools.Black;
+		Else;
+			PointGroup2[i].Color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, PointRevisit[NumOfPoints+i], min_1rt/24, max_1rt/24);
+		End;
+	End;
+	For i = 0 to PointGroup3.Count - 1;
+		If(PointRevisit[i] < 2);
+			PointGroup3[i].Color = ColorTools.Black;
+		Else;
+			PointGroup3[i].Color = ColorTools.InterpolateColorRGB({ColorTools.Blue, ColorTools.Cyan, ColorTools.Lime,ColorTools.Yellow, ColorTools.Red}, PointRevisit[NumOfPoints*4+i], min_1rt/24, max_1rt/24);
+		End;
+	End;
+	For i = 0 to scFormation.Count-1;
+		If(reportContact == 0 and scFormation[i].InView(Region1) == 0);
+			reportContact = 0;
+		Else;
+			reportContact = 1;
+		End;
+	End;
+	Update PlotWindow1;
+	Update ViewWindow1;
+	Update mapWindow3;
+	Update mapWindow2;
+	Update mapWindow1;
+ 	Step scFormation;
+	reportContact = 0; 
+	//Report scFormation[0].ElapsedTime to Console;
+End;
+
+//Report PointRevisit[NumOfPoints:NumOfPoints*2-1].ToColumnMatrix to 'avg_rt_360.csv';
+//Report PointRevisit[NumOfPoints*4:NumOfPoints*5-1].ToColumnMatrix to 'max_rt_360.csv';
+//Report PointRevisit[NumOfPoints*5:NumOfPoints*6-1].ToColumnMatrix to 'min_rt_360.csv';
+
+Array a;
+Variable indx;
+a = PointRevisit[NumOfPoints:NumOfPoints*2-1];
+
+a.Max(indx);
+Report PointGroup1[indx].Longitude;
+Report PointGroup1[indx].Latitude;
+
+//ApiLabel "SimRevisit state";
+
+
+
+
+
+
+]]></ProjectScript>
+  <ProjectNotes></ProjectNotes>
+</FreeFlyerProjectFile>

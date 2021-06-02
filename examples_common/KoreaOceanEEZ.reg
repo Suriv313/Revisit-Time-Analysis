@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FreeFlyerObjectList creation-date="Monday, August 15, 2016 10:31:45" license="Mission:Nasa,Developer" timePrecisionMode="nanosecond" version="7.1.0.35433" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Object enabled="true">
+    <Region name="northKorea">
+      <Name>nk</Name>
+      <CentralBody>Earth</CentralBody>
+      <NumberOfVertices displayed_units="" units="">30</NumberOfVertices>
+      <Latitude dim="30" displayed_units="deg" units="deg">
+        <value>31.000000</value>
+        <value>33.750000</value>
+        <value>36.000000</value>
+        <value>39.800000</value>
+        <value>42.500000</value>
+        <value>41.620000</value>
+        <value>41.070000</value>
+        <value>39.770000</value>
+        <value>39.490000</value>
+        <value>39.220000</value>
+        <value>38.710000</value>
+        <value>37.230000</value>
+        <value>35.390000</value>
+        <value>34.900000</value>
+        <value>34.450000</value>
+        <value>35.230000</value>
+        <value>35.840000</value>
+        <value>36.600000</value>
+        <value>36.600000</value>
+        <value>36.800000</value>
+        <value>37.400000</value>
+        <value>38.000000</value>
+        <value>37.700000</value>
+        <value>38.100000</value>
+        <value>39.200000</value>
+        <value>39.500000</value>
+        <value>39.700000</value>
+        <value>38.500000</value>
+        <value>36.500000</value>
+        <value>34.000000</value>
+      </Latitude>
+      <Longitude dim="30" displayed_units="deg" units="deg">
+        <value>126.000000</value>
+        <value>129.500000</value>
+        <value>131.000000</value>
+        <value>133.000000</value>
+        <value>130.300000</value>
+        <value>129.600000</value>
+        <value>129.590000</value>
+        <value>127.420000</value>
+        <value>127.500000</value>
+        <value>127.310000</value>
+        <value>128.140000</value>
+        <value>129.300000</value>
+        <value>129.340000</value>
+        <value>126.580000</value>
+        <value>126.620000</value>
+        <value>126.330000</value>
+        <value>126.740000</value>
+        <value>126.500000</value>
+        <value>126.000000</value>
+        <value>126.000000</value>
+        <value>126.600000</value>
+        <value>125.800000</value>
+        <value>125.400000</value>
+        <value>124.700000</value>
+        <value>125.300000</value>
+        <value>125.300000</value>
+        <value>124.600000</value>
+        <value>123.800000</value>
+        <value>124.300000</value>
+        <value>122.500000</value>
+      </Longitude>
+      <Color>65535</Color>
+      <Opacity displayed_units="" units="">0.4</Opacity>
+    </Region>
+  </Object>
+
+</FreeFlyerObjectList>

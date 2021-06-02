@@ -1,0 +1,176 @@
+Define Procedure PopulatePointGroupBasedOnRegion(PointGroup pg, Region analysisRegion, Variable initialNumberOfPoints, Array minLatLon, Array maxLatLon);
+
+	// Procedure to setup a PointGroup based off a defined region
+	
+	// Object creation
+	Variable i;
+	Variable j;
+	Variable maxLat = -90;
+	Variable minLat = 90;
+	Variable maxLon = 0;
+	Variable minLon = 360;
+	Variable lon;
+	Variable lat;
+	Variable prevLon;
+	Variable prevLat;
+	Variable lonSwitch;
+	Variable latSwitch;
+	Variable numOfPoints;
+	Variable aspectRatio;
+	Variable pointsAlongLon;
+	Variable pointsAlongLat;
+	Variable count;
+	
+	PointGroup boundingBoxPointGroup;
+	
+	Spacecraft sc;
+	
+	Array latPointsInRegion[0];
+	Array lonPointsInRegion[0];
+
+	//Block Determine bounding box for region
+	
+	For i = 0 to analysisRegion.NumberOfVertices-1;
+
+		If (sign(analysisRegion.Latitude[i]) != sign(prevLat));
+			If ((analysisRegion.Latitude[i] >= -90 and analysisRegion.Latitude[i] < -45) or
+				(analysisRegion.Latitude[i] <= 90 and analysisRegion.Latitude[i] > 45));
+				
+				latSwitch = 1;
+			Else;
+				
+				latSwitch = 0;
+			End;
+		End;			
+
+		If (sign(analysisRegion.Longitude[i]) != sign(prevLon));
+			If ((analysisRegion.Longitude[i] >= -180 and analysisRegion.Longitude[i] < -90) or
+				(analysisRegion.Longitude[i] <= 180 and analysisRegion.Longitude[i] > 90));
+				
+				lonSwitch = 1;
+			Else;
+				
+				lonSwitch = 0;
+			End;
+		End;			
+
+		prevLat = analysisRegion.Latitude[i];
+		prevLon = analysisRegion.Longitude[i];
+		
+		// If long switches signs around +/- 180, do this - otherwise do nothing
+		If (lonSwitch == 1 and analysisRegion.Longitude[i] < 0);
+			
+			lon = analysisRegion.Longitude[i] + 360;
+		Else;
+			
+			lon = analysisRegion.Longitude[i];
+		End;
+
+		// If lat switches signs around +/- 90, do this - otherwise do nothing
+		If (latSwitch == 1 and analysisRegion.Latitude[i] < 0);
+			
+			lat = analysisRegion.Latitude[i];// + 90;
+		Else;
+			
+			lat = analysisRegion.Latitude[i];
+		End;
+
+		If (lat < minLat);
+			
+			minLat = lat;
+		End;
+
+		If (lat > maxLat);
+			
+			maxLat = lat;
+		End;
+
+		If (lon < minLon);
+			
+			minLon = lon;
+		End;
+
+		If (lon > maxLon);
+			
+			maxLon = lon;
+		End;
+	End;
+	
+	// Set min and max Lat Lon
+	
+	minLatLon = {minLat, minLon};
+	maxLatLon = {maxLat, maxLon};
+	
+	//EndBlock
+
+	//Block Create PointGroup evenly spaced over bounding box
+
+	// Create a PointGroup evenly spaced over max/min
+	
+	numOfPoints = initialNumberOfPoints;  // Not necessarily final number of points: Rectangle will be largest that preserves aspect ratio. Use at least 150 pts.
+	aspectRatio = (maxLon - minLon)/(maxLat - minLat);      // Determine box size
+	pointsAlongLon = round(sqrt(numOfPoints*aspectRatio));  // Calculate number of columns
+	pointsAlongLat = round(pointsAlongLon/aspectRatio);     // Calculate number of rows
+
+	// Calculate number of points
+	count = (pointsAlongLat+1)*(pointsAlongLon+1);
+	
+	// Build rectangular PointGroup
+	boundingBoxPointGroup.PointDefinition = 2;
+	boundingBoxPointGroup.Count = count;
+	count = 0;
+	For i = minLat to maxLat step (maxLat - minLat)/pointsAlongLat;
+
+		For j = minLon to maxLon step (maxLon - minLon)/pointsAlongLon;
+
+			If (j > 360);
+				
+				j -= 360;
+			End;
+			If (i > 90);
+				
+				i -= 90;
+			End;
+
+			boundingBoxPointGroup[count].Longitude = j;
+			boundingBoxPointGroup[count].Latitude = i;
+			count++;
+		End;
+	End;
+	//EndBlock
+
+	//Block Define PointGroup in Region
+
+	// Place a Spacecraft at each point and determine whether SC is In Region
+	// If yes, add that point to latPointsInRegion and lonPointsInRegion Arrays
+
+	For i = 0 to boundingBoxPointGroup.Count-1;
+
+		// Assign Spacecraft location to current point of boundingBoxPointGroup
+		sc.Latitude = boundingBoxPointGroup[i].Latitude;
+		sc.Longitude = boundingBoxPointGroup[i].Longitude;
+
+		// Check whether the current point is inside the Region
+		If (sc.InRegion(analysisRegion) == 1);
+
+			// If so, add point to Arrays
+			latPointsInRegion.PushBack(boundingBoxPointGroup[i].Latitude);
+			lonPointsInRegion.PushBack(boundingBoxPointGroup[i].Longitude);
+		End;
+	End;
+
+	// Initialize pg with number of points determined above
+	pg.PointDefinition = 2;
+	pg.Count = latPointsInRegion.Dimension;
+
+	// Add points in Arrays to pg
+	For i = 0 to pg.Count-1;
+
+		pg[i].Latitude = latPointsInRegion[i];
+		pg[i].Longitude = lonPointsInRegion[i];
+	End;
+	
+	// Return value for number of points
+	initialNumberOfPoints = pg.NumberOfPoints;
+	//EndBlock
+EndProcedure;

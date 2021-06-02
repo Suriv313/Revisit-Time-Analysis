@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FreeFlyerProjectFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timePrecisionMode="nanosecond" schemaVersion="7.6.0.2">
+  <ProjectInformation>
+    <Author />
+    <Source />
+    <FreeFlyerVersion>7.6.0.54542</FreeFlyerVersion>
+    <RevisionNumber />
+    <Title />
+    <Subject />
+    <Category />
+    <Keywords />
+    <Comments />
+    <Notes />
+  </ProjectInformation>
+  <ProjectPreferences>
+    <General>
+      <LockProjectFromEditing>false</LockProjectFromEditing>
+    </General>
+    <OnOpen>
+      <ShowControlSequence>true</ShowControlSequence>
+      <ShowEmptyEnvironment>false</ShowEmptyEnvironment>
+      <ShowNotes>false</ShowNotes>
+      <ShowHome>false</ShowHome>
+      <ShowOutput>false</ShowOutput>
+      <CreateBackup>false</CreateBackup>
+      <BackupLocation></BackupLocation>
+    </OnOpen>
+    <OnRun>
+      <SaveMissionPlan>false</SaveMissionPlan>
+      <HideWarningMessages>false</HideWarningMessages>
+    </OnRun>
+  </ProjectPreferences>
+  <ProjectDataFiles>
+    <EarthOrientationFile useDefault="true"></EarthOrientationFile>
+    <ElectronDensityCoefficientFile useDefault="true"></ElectronDensityCoefficientFile>
+    <GeopotentialFile useDefault="true"></GeopotentialFile>
+    <HarrisPriesterDragFile useDefault="true"></HarrisPriesterDragFile>
+    <JacchiaAtmosphereModelFile useDefault="true"></JacchiaAtmosphereModelFile>
+    <LeapSecondFile useDefault="true"></LeapSecondFile>
+    <MagneticFieldFile useDefault="true"></MagneticFieldFile>
+    <PlanetaryFile useDefault="true"></PlanetaryFile>
+    <StationGeodeticsFile useDefault="true"></StationGeodeticsFile>
+    <SolidTideFile useDefault="true"></SolidTideFile>
+    <DSTFile useDefault="true"></DSTFile>
+    <StarFieldFile useDefault="true"></StarFieldFile>
+  </ProjectDataFiles>
+  <ProjectObjects>
+    <Object>
+      <SolarSystem name="FF_SolarSystem" isConstant="false" isGlobal="true">
+        <Name>FF_SolarSystem</Name>
+        <ComputePolarMotion>true</ComputePolarMotion>
+        <ApplyUT1Correction>true</ApplyUT1Correction>
+        <COUpdateInterval units="s" displayed_units="s">0</COUpdateInterval>
+        <NPUpdateInterval units="s" displayed_units="s">1800</NPUpdateInterval>
+        <IonosphereOptions>
+          <IonosphereOptions name="FF_SolarSystem_|ionoOptions|" isConstant="false" isGlobal="true">
+            <Name>FF_SolarSystem_|ionoOptions|</Name>
+            <MaximumHeight units="km" displayed_units="km">1000</MaximumHeight>
+            <MinimumHeight units="km" displayed_units="km">80</MinimumHeight>
+            <IntegrationStepSize units="km" displayed_units="km">25</IntegrationStepSize>
+            <ScaleFactor units="" displayed_units="">1</ScaleFactor>
+            <Model>0</Model>
+            <metadata dim="0" />
+          </IonosphereOptions>
+        </IonosphereOptions>
+        <NoradKeplerEqTolerance units="" displayed_units="">1e-12</NoradKeplerEqTolerance>
+        <metadata dim="0" />
+      </SolarSystem>
+    </Object>
+    <Object>
+      <ConsoleWindow name="Console" isConstant="false" isGlobal="true">
+        <Name>Console</Name>
+        <WindowTitle>Console</WindowTitle>
+        <WordWrap>false</WordWrap>
+        <CurrentTextColor>0</CurrentTextColor>
+        <BackColor>16777215</BackColor>
+        <Dimension units="" displayed_units="">10</Dimension>
+        <DockMode>1</DockMode>
+        <CurrentFontType>0</CurrentFontType>
+        <UseStdOut>false</UseStdOut>
+        <ShowOnRun>false</ShowOnRun>
+        <metadata dim="0" />
+      </ConsoleWindow>
+    </Object>
+    <Object>
+      <Region name="Region1" isConstant="false" isGlobal="false">
+        <Name>Region1</Name>
+        <CentralBody>Earth</CentralBody>
+        <NumberOfVertices units="" displayed_units="">6</NumberOfVertices>
+        <Latitude units="deg" displayed_units="deg" dim="6">
+          <value>47.25</value>
+          <value>47.25</value>
+          <value>36</value>
+          <value>24.75</value>
+          <value>24.75</value>
+          <value>36</value>
+        </Latitude>
+        <Longitude units="deg" displayed_units="deg" dim="6">
+          <value>113.4</value>
+          <value>146.6</value>
+          <value>143.92</value>
+          <value>142.39</value>
+          <value>117.61</value>
+          <value>116.08</value>
+        </Longitude>
+        <Color>65535</Color>
+        <Opacity units="" displayed_units="">0.4</Opacity>
+        <metadata dim="0" />
+      </Region>
+    </Object>
+    <Object>
+      <PointGroup name="PointGroup1" isConstant="false" isGlobal="false">
+        <Name>PointGroup1</Name>
+        <CentralBody>Earth</CentralBody>
+        <DataView>0</DataView>
+        <NumberOfPoints units="" displayed_units="">1</NumberOfPoints>
+        <PointDefinition>1</PointDefinition>
+        <GroupColor>0</GroupColor>
+        <GroupHeight units="km" displayed_units="km">0.0</GroupHeight>
+        <GroupElevationAngle units="deg" displayed_units="deg">0.0</GroupElevationAngle>
+        <GroupSize units="pixel" displayed_units="pixel">3.0</GroupSize>
+        <GroupOpacity units="" displayed_units="">1.0</GroupOpacity>
+        <PointLongitude units="deg" displayed_units="deg" dim="(1)">
+          <value>0.0</value>
+        </PointLongitude>
+        <PointLatitude units="deg" displayed_units="deg" dim="(1)">
+          <value>90.0</value>
+        </PointLatitude>
+        <PointHeight units="km" displayed_units="km" dim="(1)">
+          <value>0.0</value>
+        </PointHeight>
+        <PointColor dim="(1)">
+          <value>0</value>
+        </PointColor>
+        <PointElevationAngle units="deg" displayed_units="deg" dim="(1)">
+          <value>0.0</value>
+        </PointElevationAngle>
+        <PointSize units="pixel" displayed_units="pixel" dim="(1)">
+          <value>3.0</value>
+        </PointSize>
+        <PointOpacity units="" displayed_units="" dim="(1)">
+          <value>1.0</value>
+        </PointOpacity>
+        <AreaSpacing units="km^2" displayed_units="km^2">60000.0</AreaSpacing>
+        <Optimization>
+          <NumberLatitudeGrids units="" displayed_units="">100</NumberLatitudeGrids>
+          <NumberLongitudeGrids units="" displayed_units="">36</NumberLongitudeGrids>
+          <GridSafetyMargin units="deg" displayed_units="deg">2.0</GridSafetyMargin>
+        </Optimization>
+        <metadata dim="0" />
+      </PointGroup>
+    </Object>
+    <Object>
+      <Formation name="scFormation" isConstant="false" isGlobal="false">
+        <Name>scFormation</Name>
+        <Count units="" displayed_units="">0</Count>
+        <Element dim="0" />
+        <Visualization>
+          <ViewAsGroup>false</ViewAsGroup>
+          <GroupPointSize units="pixel" displayed_units="pixel">2</GroupPointSize>
+        </Visualization>
+        <InitializationSource>3</InitializationSource>
+        <InitializationFile></InitializationFile>
+        <metadata dim="0" />
+      </Formation>
+    </Object>
+  </ProjectObjects>
+  <ProjectMissionSequence>
+    <ProjectExternals>
+      <ProjectExternal included="true" autosave="true" contentType="FreeFlyerScript">.\PopulatePointGroupBasedOnRegion.FFProcedure</ProjectExternal>
+    </ProjectExternals>
+    <ProjectCommands>
+      <FreeForm enabled="true">
+        <Label>FreeForm</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[
+// Mission Plan Description and Console Setup
+
+// In this example, Spacecraft2 is viewed by a sensor on Spacecraft1, and 
+// several types of output are generated.  There is a 3D ViewWindow showing
+// the relative positions of the two spacecraft, a sensor-view ViewWindow 
+// showing the perspective of a sensor attached to Spacecraft1 pointing along
+// the SC1 body x-axis, a Cartesian plot of the range between the two Spacecraft,
+// and a polar plot of the azimuth and elevation from Spacecraft1 to Spacecraft2.
+
+
+// Console Setup
+Console.BackColor = ColorTools.Black;
+Console.CurrentTextColor = ColorTools.Khaki;
+Console.Dimension = 35;
+Console.DockMode = 3;
+Console.WordWrap = 1;
+Console.Show();
+
+Report "In this example, Spacecraft2 is viewed by a sensor on Spacecraft1, and several types of output are generated.  There is a 3D ViewWindow showing the relative positions of the two spacecraft, a sensor-view ViewWindow showing the perspective of a sensor attached to Spacecraft1 pointing along the SC1 body x-axis, a Cartesian plot of the range between the two Spacecraft, and a polar plot of the azimuth and elevation from Spacecraft1 to Spacecraft2." to Console;
+
+ApiLabel "Description state";
+
+//*****************************************************************************************
+
+Array PointCoverage[0]; // Array to hold coverage statistics for each point
+
+Array PointRevisit[0];  // Array to hold revisit statistics for each point
+
+Array PointInView[0];   // Array to hold per sensor coverage indication for each point
+
+Variable CoverageChange;
+
+Variable i;
+Variable j;
+
+Variable theta_inci_min;
+Variable theta_inci_max;
+Variable h;
+
+Variable look_ang_range;
+
+Variable num_orbit_plane;
+Variable num_sc_in_plane;
+
+Variable period;
+String propType;
+
+Variable sensorAngle;
+
+ApiLabel "Set state";
+
+
+//**********************************************************************************************************************************************************************************
+
+look_ang_range = sensorAngle+3.9;
+
+ApiLabel "SetSensor state";
+
+//**********************************************************************************************************************************************************************************
+
+For i = 0 to scFormation.Count-1;
+
+	 scFormation[i].AddSensor("sensor1" + i.ToString+j.ToString);        // Add a sensor to each Spacecraft in the Formation
+	 scFormation[i].SetPropagatorType(propType);
+
+End;
+
+ApiLabel "GenerateSat state";
+
+//**********************************************************************************************************************************************************************************
+
+// Create a PointGroup evenly spaced over max/min
+
+Get Region1 from "KoreaOceanEEZ.reg";  // Load Continental US region
+Array minLatLon;
+Array maxLatLon;
+Variable NumOfPoints;
+
+NumOfPoints = 1250;
+PointGroup1.PointDefinition = 2;
+PointGroup1.Count = NumOfPoints;
+PointGroup1.GroupSize = 3;
+
+Call PopulatePointGroupBasedOnRegion(PointGroup1, Region1, PointGroup1.Count, minLatLon, maxLatLon);
+
+NumOfPoints = PointGroup1.Count;
+
+ApiLabel "PointGroup state";
+
+//******************************************************************************************************************************************************************************
+/*
+Viewpoint Mapviewpoint;
+Mapviewpoint.ViewpointType = "map";
+Mapviewpoint.ViewpointName = "mapview";
+
+ViewWindow ViewWindow1 ({scFormation, PointGroup1});
+ViewWindow mapWindow1 ({scFormation, PointGroup1});
+mapWindow1.AddViewpoint(Mapviewpoint);
+mapWindow1.ActivateViewpoint(Mapviewpoint.ViewpointName);
+*/
+//PointGroup1.Count = 1;
+//PointGroup1[0].Longitude = 127.3845;
+//PointGroup1[0].Latitude = 36.3504;
+While (scFormation[0].ElapsedTime < TimeSpan.FromDays(period));
+	      //CoverageChange will be 1 if any coverage statistic was updated
+
+      CoverageChange = PointGroup1.Coverage(scFormation,PointCoverage,PointRevisit,PointInView); 
+
+
+       If (CoverageChange == 1);
+
+            For i = 0 to PointGroup1.NumberOfPoints - 1;
+
+                  If (PointCoverage[i] == 1);                        // 1 - Has been in view
+
+                        PointGroup1.PointColor[i] = ColorTools.Lime;
+                                    	
+
+                  Else;
+
+                        PointGroup1.PointColor[i] = ColorTools.Red;  // 0 - Never been in view
+
+                  End;
+
+            End;
+
+      End;
+
+	//Update ViewWindow1;
+	//Update mapWindow1;
+ 	Step scFormation;
+//	Report scFormation[0].ElapsedTime to Console;
+End;
+
+
+
+ApiLabel "SimRevisit state";]]></FreeFormScript>
+      </FreeForm>
+    </ProjectCommands>
+  </ProjectMissionSequence>
+  <ProjectScript><![CDATA[
+// Mission Plan Description and Console Setup
+
+// In this example, Spacecraft2 is viewed by a sensor on Spacecraft1, and 
+// several types of output are generated.  There is a 3D ViewWindow showing
+// the relative positions of the two spacecraft, a sensor-view ViewWindow 
+// showing the perspective of a sensor attached to Spacecraft1 pointing along
+// the SC1 body x-axis, a Cartesian plot of the range between the two Spacecraft,
+// and a polar plot of the azimuth and elevation from Spacecraft1 to Spacecraft2.
+
+
+// Console Setup
+Console.BackColor = ColorTools.Black;
+Console.CurrentTextColor = ColorTools.Khaki;
+Console.Dimension = 35;
+Console.DockMode = 3;
+Console.WordWrap = 1;
+Console.Show();
+
+Report "In this example, Spacecraft2 is viewed by a sensor on Spacecraft1, and several types of output are generated.  There is a 3D ViewWindow showing the relative positions of the two spacecraft, a sensor-view ViewWindow showing the perspective of a sensor attached to Spacecraft1 pointing along the SC1 body x-axis, a Cartesian plot of the range between the two Spacecraft, and a polar plot of the azimuth and elevation from Spacecraft1 to Spacecraft2." to Console;
+
+ApiLabel "Description state";
+
+//*****************************************************************************************
+
+Array PointCoverage[0]; // Array to hold coverage statistics for each point
+
+Array PointRevisit[0];  // Array to hold revisit statistics for each point
+
+Array PointInView[0];   // Array to hold per sensor coverage indication for each point
+
+Variable CoverageChange;
+
+Variable i;
+Variable j;
+
+Variable theta_inci_min;
+Variable theta_inci_max;
+Variable h;
+
+Variable look_ang_range;
+
+Variable num_orbit_plane;
+Variable num_sc_in_plane;
+
+Variable period;
+String propType;
+
+Variable sensorAngle;
+
+ApiLabel "Set state";
+
+
+//**********************************************************************************************************************************************************************************
+
+look_ang_range = sensorAngle+3.9;
+
+ApiLabel "SetSensor state";
+
+//**********************************************************************************************************************************************************************************
+
+For i = 0 to scFormation.Count-1;
+
+	 scFormation[i].AddSensor("sensor1" + i.ToString+j.ToString);        // Add a sensor to each Spacecraft in the Formation
+	 scFormation[i].SetPropagatorType(propType);
+
+End;
+
+ApiLabel "GenerateSat state";
+
+//**********************************************************************************************************************************************************************************
+
+// Create a PointGroup evenly spaced over max/min
+
+Get Region1 from "KoreaOceanEEZ.reg";  // Load Continental US region
+Array minLatLon;
+Array maxLatLon;
+Variable NumOfPoints;
+
+NumOfPoints = 1250;
+PointGroup1.PointDefinition = 2;
+PointGroup1.Count = NumOfPoints;
+PointGroup1.GroupSize = 3;
+
+Call PopulatePointGroupBasedOnRegion(PointGroup1, Region1, PointGroup1.Count, minLatLon, maxLatLon);
+
+NumOfPoints = PointGroup1.Count;
+
+ApiLabel "PointGroup state";
+
+//******************************************************************************************************************************************************************************
+/*
+Viewpoint Mapviewpoint;
+Mapviewpoint.ViewpointType = "map";
+Mapviewpoint.ViewpointName = "mapview";
+
+ViewWindow ViewWindow1 ({scFormation, PointGroup1});
+ViewWindow mapWindow1 ({scFormation, PointGroup1});
+mapWindow1.AddViewpoint(Mapviewpoint);
+mapWindow1.ActivateViewpoint(Mapviewpoint.ViewpointName);
+*/
+//PointGroup1.Count = 1;
+//PointGroup1[0].Longitude = 127.3845;
+//PointGroup1[0].Latitude = 36.3504;
+While (scFormation[0].ElapsedTime < TimeSpan.FromDays(period));
+	      //CoverageChange will be 1 if any coverage statistic was updated
+
+      CoverageChange = PointGroup1.Coverage(scFormation,PointCoverage,PointRevisit,PointInView); 
+
+
+       If (CoverageChange == 1);
+
+            For i = 0 to PointGroup1.NumberOfPoints - 1;
+
+                  If (PointCoverage[i] == 1);                        // 1 - Has been in view
+
+                        PointGroup1.PointColor[i] = ColorTools.Lime;
+                                    	
+
+                  Else;
+
+                        PointGroup1.PointColor[i] = ColorTools.Red;  // 0 - Never been in view
+
+                  End;
+
+            End;
+
+      End;
+
+	//Update ViewWindow1;
+	//Update mapWindow1;
+ 	Step scFormation;
+//	Report scFormation[0].ElapsedTime to Console;
+End;
+
+
+
+ApiLabel "SimRevisit state";]]></ProjectScript>
+  <ProjectNotes></ProjectNotes>
+</FreeFlyerProjectFile>
